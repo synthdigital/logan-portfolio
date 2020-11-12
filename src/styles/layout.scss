@@ -940,12 +940,20 @@ header.fixed {
   }
 }
 
+.bm-menu-wrap {
+  -webkit-box-shadow: -10px 10px 23px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: -10px 10px 23px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: -10px 10px 23px 0px rgba(0, 0, 0, 0.25);
+  // pointer-events: none;
+}
+
 header .bm-burger-button,
 header .bm-menu-wrap {
   display: initial;
 }
 
 .bm-item-list {
+  pointer-events: all;
   padding-top: 50px;
 }
 
@@ -1767,6 +1775,17 @@ body .left-0 {
   .phone-img {
     width: 22vw;
     height: auto;
+    transition-duration: 0.5s;
+    right: -50vw;
+    bottom: -50vw;
+    opacity: 0;
+    position: relative;
+
+    &.animate {
+      right: 0;
+      bottom: 0;
+      opacity: 1;
+    }
   }
 
   .dog-logo {
@@ -1774,22 +1793,60 @@ body .left-0 {
     height: auto;
     margin-left: auto;
     margin-right: 50px;
+    transition-duration: 0.5s;
+    left: -50vw;
+    bottom: -50vw;
+    opacity: 0;
+    position: relative;
+
+    &.animate {
+      left: 0;
+      bottom: 0;
+      opacity: 1;
+    }
   }
 
   .website-design {
     width: 100%;
     height: auto;
+    transition-duration: 0.5s;
+    left: -50vw;
+    opacity: 0;
+    position: relative;
+
+    &.animate {
+      left: 0;
+      opacity: 1;
+    }
   }
 
   .custom-icon {
     width: 20vw;
     height: auto;
     margin-left: 50px;
+    transition-duration: 0.5s;
+    right: -50vw;
+    opacity: 0;
+    position: relative;
+
+    &.animate {
+      right: 0;
+      opacity: 1;
+    }
   }
 
   .dashboard {
     width: 100%;
     margin-top: 75px;
+    transition-duration: 0.5s;
+    right: -50vw;
+    opacity: 0;
+    position: relative;
+
+    &.animate {
+      right: 0;
+      opacity: 1;
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -2012,7 +2069,7 @@ footer {
       font-family: brother-1816, sans-serif;
       font-weight: 300;
       line-height: 50px;
-      width: 95%;
+      width: 100%;
     }
 
     input {
@@ -2049,8 +2106,9 @@ footer {
 
     .two-inputs {
       display: flex;
+      justify-content: space-between;
       label {
-        max-width: 90%;
+        max-width: 100%;
       }
 
       @media screen and (max-width: 767px) {
@@ -2071,7 +2129,7 @@ footer {
 
     button.btn {
       background: #00ddc7;
-      width: 95%;
+      width: 100%;
       font-size: 20px;
       color: #0c0c0c;
       font-weight: 700;

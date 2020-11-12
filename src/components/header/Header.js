@@ -36,7 +36,7 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
         buttonStyle={{
           color: "#fff",
           fontSize: "13px",
-          background: "#ff3975",
+          background: "#00ddc7",
           borderRadius: "20px",
           padding: "10px 20px",
         }}
@@ -83,17 +83,6 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
             />
           </Link>
           <Burger />
-        </div>
-        <div id="navbarBasicExample" className="navbar-menu">
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="buttons">
-                {/* <Link to="/marketing-warmup" className="button first">
-                  Portfolio
-                </Link> */}
-              </div>
-            </div>
-          </div>
         </div>
       </nav>
     </header>

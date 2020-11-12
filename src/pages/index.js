@@ -65,6 +65,7 @@ const IndexPage = () => {
                 people enjoy using.
               </p>
             </Col>
+
             <Col>
               <img
                 src={require("../images/screen-shot-2020-10-08-at-4-16-35-pm.png")}
@@ -74,6 +75,11 @@ const IndexPage = () => {
               />
             </Col>
           </Row>
+          <Waypoint
+            onEnter={() => {
+              document.querySelector(".phone-img").classList.add("animate");
+            }}
+          />
           <Row className="margin-top-50">
             <Col className="right-align">
               <img
@@ -83,6 +89,7 @@ const IndexPage = () => {
                 alt="dog logo"
               />
             </Col>
+
             <Col className="margin-top-140">
               <h2>
                 Branding that engages
@@ -96,6 +103,11 @@ const IndexPage = () => {
               </p>
             </Col>
           </Row>
+          <Waypoint
+            onEnter={() => {
+              document.querySelector(".dog-logo").classList.add("animate");
+            }}
+          />
           <Row className="margin-top-110">
             <Col>
               {" "}
@@ -116,6 +128,18 @@ const IndexPage = () => {
               />
             </Col>
           </Row>
+          <Waypoint
+            onEnter={() => {
+              document
+                .querySelector(".website-design")
+                .classList.add("animate");
+            }}
+          />
+          <Waypoint
+            onEnter={() => {
+              document.querySelector(".custom-icon").classList.add("animate");
+            }}
+          />
           <Row className="margin-top-160 margin-bottom-200">
             <Col>
               <h2>
@@ -130,6 +154,7 @@ const IndexPage = () => {
                 for both consumer and enterprise applications.
               </p>
             </Col>
+
             <Col>
               <img
                 src={require("../images/screen-shot-2020-10-22-at-3-50-01-pm.png")}
@@ -139,6 +164,11 @@ const IndexPage = () => {
               />
             </Col>
           </Row>
+          <Waypoint
+            onEnter={() => {
+              document.querySelector(".dashboard").classList.add("animate");
+            }}
+          />
         </Container>
         <Container className="core-services">
           <Row className="margin-top-60">
