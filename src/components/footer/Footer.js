@@ -38,18 +38,18 @@ const Footer = () => {
                 e.preventDefault();
                 const submitButton = document.getElementById("sbmt-form-btn");
                 const loader = document.querySelector(".loader");
-                const formName = document.getElementById("vendor-lp");
+                const formName = document.getElementById("contact-form");
 
                 loader.style.display = "block";
                 submitButton.style.display = "none";
 
                 fetch(formName.getAttribute("action"), {
                   method: "POST",
-                  body: new FormData(document.getElementById("vendor-lp")),
+                  body: new FormData(document.getElementById("contact-form")),
                 })
                   .then(res => {
                     if (res.status === 200) {
-                      document.querySelector("#vendor-lp").style.display =
+                      document.querySelector("#contact-form").style.display =
                         "none";
                       document.querySelector(
                         ".contact-thank-you"
