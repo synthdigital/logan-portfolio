@@ -51,7 +51,7 @@ const IndexPage = () => {
               <h5 className="margin-top-100">OUR FOCUS</h5>
             </Col>
           </Row>
-          <Row className="margin-top-125">
+          <Row className="margin-top-125 flexed">
             <Col>
               <h2>
                 Digital experiences
@@ -114,7 +114,7 @@ const IndexPage = () => {
               <img
                 src={require("../images/screen-shot-2020-10-22-at-3-45-29-pm.png")}
                 srcSet={`${require("../images/screen-shot-2020-10-22-at-3-45-29-pm.png")} 300w, ${require("../images/screen-shot-2020-10-22-at-3-45-29-pm@2x.png")} 768w, ${require("../images/screen-shot-2020-10-22-at-3-45-29-pm@3x.png")} 1280w`}
-                className="website-design"
+                className="website-design margin-bottom-mobile-0"
                 alt="website design"
               />
             </Col>
@@ -123,7 +123,7 @@ const IndexPage = () => {
               <img
                 src={require("../images/group-2.png")}
                 srcSet={`${require("../images/group-2.png")} 300w, ${require("../images/group-2@2x.png")} 768w, ${require("../images/group-2@3x.png")} 1280w`}
-                className="custom-icon"
+                className="custom-icon hide-on-mobile"
                 alt="custom icon"
               />
             </Col>
@@ -140,7 +140,7 @@ const IndexPage = () => {
               document.querySelector(".custom-icon").classList.add("animate");
             }}
           />
-          <Row className="margin-top-160 margin-bottom-200">
+          <Row className="margin-top-160 margin-top-mobile-0 margin-bottom-200">
             <Col>
               <h2>
                 Enterprise experience
@@ -159,7 +159,7 @@ const IndexPage = () => {
               <img
                 src={require("../images/screen-shot-2020-10-22-at-3-50-01-pm.png")}
                 srcSet={`${require("../images/screen-shot-2020-10-22-at-3-50-01-pm.png")} 300w, ${require("../images/screen-shot-2020-10-22-at-3-50-01-pm@2x.png")} 768w, ${require("../images/screen-shot-2020-10-22-at-3-50-01-pm@3x.png")} 1280w`}
-                className="dashboard margin-top-75"
+                className="dashboard margin-top-75 hide-on-mobile"
                 alt="Dashboard"
               />
             </Col>
@@ -228,6 +228,8 @@ const IndexPage = () => {
                 collaborative, every digital product design partnership goes
                 through these three core phases:
               </p>
+            </Col>
+            <Col>
               <div className="step-one">
                 <Collapsible trigger="I. Research & Discovery">
                   <p>
@@ -335,26 +337,51 @@ const IndexPage = () => {
               <img
                 src={require("../svgs/varo-bank-logo-1.svg")}
                 alt="Varo Logo"
+                className="logo one"
               />
             </Col>
             <Col>
-              <img src={require("../svgs/group-17.svg")} alt="Equinedge Logo" />
+              <img
+                src={require("../svgs/group-17.svg")}
+                alt="Equinedge Logo"
+                className="logo two"
+              />
             </Col>
             <Col>
-              <img src={require("../svgs/group-5.svg")} alt="CR Logo" />
+              <img
+                src={require("../svgs/group-5.svg")}
+                alt="CR Logo"
+                className="logo three"
+              />
             </Col>
             <Col>
               <img
                 src={require("../svgs/group.svg")}
                 alt="Hospital Integration Logo"
+                className="logo four"
               />
             </Col>
             <Col>
-              <img src={require("../svgs/group-225.svg")} alt="UM Logo" />
+              <img
+                src={require("../svgs/group-225.svg")}
+                alt="UM Logo"
+                className="logo five"
+              />
             </Col>
             <Col>
-              <img src={require("../svgs/group-7.svg")} alt="TU Logo" />
+              <img
+                src={require("../svgs/group-7.svg")}
+                alt="TU Logo"
+                className="logo six"
+              />
             </Col>
+            <Waypoint
+              onEnter={() => {
+                document
+                  .querySelector(".logos-section")
+                  .classList.add("animate");
+              }}
+            />
           </Row>
         </Container>
       </div>
