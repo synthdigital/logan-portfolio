@@ -2041,7 +2041,7 @@ body .left-0 {
     position: relative;
     bottom: -100px;
     opacity: 0;
-    transition-duration: 0.25s;
+    transition-duration: 0.35s;
   }
 
   &.animate .logo {
@@ -2051,22 +2051,22 @@ body .left-0 {
       transition-delay: 0s;
     }
     &.two {
-      transition-delay: 0.1s;
-    }
-    &.three {
       transition-delay: 0.2s;
     }
-    &.four {
-      transition-delay: 0.3s;
-    }
-    &.five {
+    &.three {
       transition-delay: 0.4s;
     }
-    &.six {
+    &.four {
       transition-delay: 0.5s;
     }
-    &.seven {
+    &.five {
       transition-delay: 0.6s;
+    }
+    &.six {
+      transition-delay: 0.8s;
+    }
+    &.seven {
+      transition-delay: 1s;
     }
   }
 

@@ -223,13 +223,14 @@ const IndexPage = () => {
           <Row className="margin-top-60 margin-bottom-100">
             <Col>
               <h5 className="uppercase margin-bottom-50">our process</h5>
+            </Col>
+            <Col>
               <p>
                 While every project is unique, and our models adaptive and
                 collaborative, every digital product design partnership goes
                 through these three core phases:
               </p>
-            </Col>
-            <Col>
+
               <div className="step-one">
                 <Collapsible trigger="I. Research & Discovery">
                   <p>
@@ -309,23 +310,28 @@ const IndexPage = () => {
               <div>
                 <div className="testimoni">
                   <p>
-                    “Working with Logan was very easy. He immediately understood
-                    our business requirements, translated them into specs, and
-                    got the work done quickly. I would definitely work with him
-                    again!”
+                    “I’ve worked with multiple designers but none like Logan.
+                    His work exceeds expectations.”
                   </p>
-                  <cite>Roger Van Duinen, Co-Founder Varo Money</cite>
+                  <cite>
+                    Jeffrey Scott Smith, Founder,
+                    <br /> Hospital Integration Inc.
+                  </cite>
                 </div>
               </div>
               <div>
                 <div className="testimoni">
                   <p>
-                    “Working with Logan was very easy. He immediately understood
-                    our business requirements, translated them into specs, and
-                    got the work done quickly. I would definitely work with him
-                    again!”
+                    “Logan is a designer with a motivation to solve complex
+                    challenges. He came to the table as a thought partner rather
+                    than just a doer that blindly follows orders. He brought not
+                    just excellent multi-platform UX design, but all-around
+                    great ideas.”
                   </p>
-                  <cite>Roger Van Duinen, Co-Founder Varo Money</cite>
+                  <cite>
+                    Scott McKeever, Founder & CEO,
+                    <br /> EquinEdge
+                  </cite>
                 </div>
               </div>
             </Slider>
