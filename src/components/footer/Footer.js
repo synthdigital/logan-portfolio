@@ -52,7 +52,7 @@ const Footer = () => {
                       document.querySelector("#contact-form").style.display =
                         "none";
                       document.querySelector(
-                        ".contact-thank-you"
+                        ".footer-thank-you"
                       ).style.display = "block";
                     } else {
                       loader.style.display = "none";

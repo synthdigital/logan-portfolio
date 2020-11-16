@@ -223,8 +223,7 @@ const IndexPage = () => {
           <Row className="margin-top-60 margin-bottom-100">
             <Col>
               <h5 className="uppercase margin-bottom-50">our process</h5>
-            </Col>
-            <Col>
+
               <p>
                 While every project is unique, and our models adaptive and
                 collaborative, every digital product design partnership goes

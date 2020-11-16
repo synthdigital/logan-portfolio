@@ -1877,6 +1877,11 @@ body .left-0 {
 .our-process {
   background: #f4e2f5;
 
+  .row {
+    text-align: center;
+    justify-content: center;
+  }
+
   .col {
     max-width: 900px;
   }
