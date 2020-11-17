@@ -16,10 +16,6 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
         }
       }
     });
-    const script = document.createElement("script");
-    script.src = "/static/honey-form-integration.js";
-    script.async = true;
-    document.body.appendChild(script);
   });
 
   return (

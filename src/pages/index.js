@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Waypoint } from "react-waypoint";
-import { Link } from "gatsby";
 import Collapsible from "react-collapsible";
 import Slider from "react-slick";
 
@@ -52,7 +51,7 @@ const IndexPage = () => {
             </Col>
           </Row>
           <Row className="margin-top-125 flexed">
-            <Col>
+            <Col className="left">
               <h2>
                 Digital experiences
                 <br /> designed for humans
@@ -66,7 +65,7 @@ const IndexPage = () => {
               </p>
             </Col>
 
-            <Col>
+            <Col className="right">
               <img
                 src={require("../images/screen-shot-2020-10-08-at-4-16-35-pm.png")}
                 srcSet={`${require("../images/screen-shot-2020-10-08-at-4-16-35-pm.png")} 300w, ${require("../images/screen-shot-2020-10-08-at-4-16-35-pm@2x.png")} 768w, ${require("../images/screen-shot-2020-10-08-at-4-16-35-pm@3x.png")} 1280w`}
@@ -81,7 +80,7 @@ const IndexPage = () => {
             }}
           />
           <Row className="margin-top-50">
-            <Col className="right-align">
+            <Col className="right-align left">
               <img
                 src={require("../images/screen-shot-2020-10-09-at-12-32-02-pm.png")}
                 srcSet={`${require("../images/screen-shot-2020-10-09-at-12-32-02-pm.png")} 300w, ${require("../images/screen-shot-2020-10-09-at-12-32-02-pm.png")} 768w, ${require("../images/screen-shot-2020-10-09-at-12-32-02-pm@3x.png")} 1280w`}
@@ -90,7 +89,7 @@ const IndexPage = () => {
               />
             </Col>
 
-            <Col className="margin-top-140">
+            <Col className="margin-top-140 right">
               <h2>
                 Branding that engages
                 <br /> and empowers
@@ -109,7 +108,7 @@ const IndexPage = () => {
             }}
           />
           <Row className="margin-top-110">
-            <Col>
+            <Col className="left">
               {" "}
               <img
                 src={require("../images/screen-shot-2020-10-22-at-3-45-29-pm.png")}
@@ -118,7 +117,7 @@ const IndexPage = () => {
                 alt="website design"
               />
             </Col>
-            <Col className="margin-top-160">
+            <Col className="margin-top-160 right">
               {" "}
               <img
                 src={require("../images/group-2.png")}
@@ -141,7 +140,7 @@ const IndexPage = () => {
             }}
           />
           <Row className="margin-top-160 margin-top-mobile-0 margin-bottom-200">
-            <Col>
+            <Col className="left">
               <h2>
                 Enterprise experience
                 <br /> at consumer-grade
@@ -155,7 +154,7 @@ const IndexPage = () => {
               </p>
             </Col>
 
-            <Col>
+            <Col className="right">
               <img
                 src={require("../images/screen-shot-2020-10-22-at-3-50-01-pm.png")}
                 srcSet={`${require("../images/screen-shot-2020-10-22-at-3-50-01-pm.png")} 300w, ${require("../images/screen-shot-2020-10-22-at-3-50-01-pm@2x.png")} 768w, ${require("../images/screen-shot-2020-10-22-at-3-50-01-pm@3x.png")} 1280w`}
@@ -177,7 +176,7 @@ const IndexPage = () => {
             </Col>
           </Row>
           <Row className="margin-top-75 margin-bottom-125 flex-col-mobile">
-            <Col>
+            <Col className="service">
               <h3>Strategy</h3>
               <ul>
                 <li>UI/UX Auditing</li>
@@ -187,7 +186,7 @@ const IndexPage = () => {
                 <li>Testing</li>
               </ul>
             </Col>
-            <Col>
+            <Col className="service">
               <h3>Design</h3>
               <ul>
                 <li>Mobile Apps</li>
@@ -197,7 +196,7 @@ const IndexPage = () => {
                 <li>Prototyping & Testing</li>
               </ul>
             </Col>
-            <Col>
+            <Col className="service">
               <h3>Development</h3>
               <ul>
                 <li>Rapid prototyping</li>
@@ -207,7 +206,7 @@ const IndexPage = () => {
                 <li>Backend Integrations</li>
               </ul>
             </Col>
-            <Col>
+            <Col className="service">
               <h3>Content</h3>
               <ul>
                 <li>Copywriting</li>
