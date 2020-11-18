@@ -147,10 +147,10 @@ const IndexPage = () => {
               </h2>
               <p>
                 We transform legacy enterprise apps into consumer-grade
-                experiences, increasing efficiency, productivity and
-                morale.　The implementation of elegant and effective
-                human-centric design is at the forefront of our design ethos,
-                for both consumer and enterprise applications.
+                experiences, increasing efficiency, productivity and morale. The
+                implementation of elegant and effective human-centric design is
+                at the forefront of our design ethos, for both consumer and
+                enterprise applications.
               </p>
             </Col>
 

@@ -2035,11 +2035,15 @@ body .left-0 {
     left: -100px;
     top: 60px;
     z-index: 999;
+    height: 70px;
+    width: 40px;
+
     &:before {
       content: url("../svgs/left-arrow.svg");
       height: 50px;
       width: 50px;
     }
+
     @media screen and (max-width: 1224px) {
       left: 20px;
     }
