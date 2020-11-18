@@ -30,7 +30,7 @@ const IndexPage = () => {
               <h1 className="teal-text">Howdy.</h1>
               <p className="white-text subtext">
                 We’re a UI/UX strategy and design agency in Dallas, Tx. <br />{" "}
-                We create kickass digital products accross all platforms.
+                We create kickass digital products across all platforms.
               </p>
             </Col>
           </Row>

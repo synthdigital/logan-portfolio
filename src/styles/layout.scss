@@ -2052,6 +2052,9 @@ body .left-0 {
   .slick-next {
     right: -100px;
     top: 60px;
+    height: 70px;
+    width: 40px;
+
     &:before {
       content: url("../svgs/right-arrow.svg");
       height: 50px;
