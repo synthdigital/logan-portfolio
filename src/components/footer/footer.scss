@@ -146,6 +146,10 @@ footer button.pink-button {
     text-align: center;
   }
 
+  footer .col {
+    flex-basis: initial;
+  }
+
   footer .socket p {
     width: 100%;
   }
