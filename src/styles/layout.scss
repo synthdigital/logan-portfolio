@@ -2053,7 +2053,7 @@ body .left-0 {
 
       &.is-open {
         &::before {
-          right: 60px;
+          right: -50px;
         }
       }
     }
@@ -2390,6 +2390,12 @@ footer {
 
       &:hover {
         text-decoration: underline;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      h3 {
+        min-height: 72px;
       }
     }
   }
