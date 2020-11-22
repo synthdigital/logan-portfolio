@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Waypoint } from "react-waypoint";
 import Collapsible from "react-collapsible";
@@ -10,18 +10,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const IndexPage = () => {
-  useEffect(() => {
-    const isMobile = window.innerWidth <= 767;
+  const [isMobile, setIsMobile] = useState(false);
 
-    if (isMobile) {
-      settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      };
-    }
+  useEffect(() => {
+    setIsMobile(window.innerWidth <= 767);
   });
 
   let settings = {
@@ -31,6 +23,16 @@ const IndexPage = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  if (isMobile) {
+    settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
+  }
 
   return (
     <Layout>

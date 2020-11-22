@@ -1163,8 +1163,8 @@ main video {
   max-width: initial;
 }
 
-.show-mobile {
-  display: none;
+div .show-mobile {
+  display: none !important;
 }
 
 main .col.static-position {
@@ -1369,8 +1369,8 @@ div .display-block {
     padding-top: 120px;
   }
 
-  .show-mobile {
-    display: block;
+  div .show-mobile {
+    display: block !important;
   }
 
   .hide-on-mobile {
@@ -2231,11 +2231,16 @@ body .left-0 {
       }
     }
 
-    @media screen and (max-width: 1224px) {
+    @media screen and (max-width: 767px) {
       .col {
         flex-basis: 45%;
         text-align: center;
         margin-bottom: 25px;
+      }
+
+      .logo {
+        bottom: 0;
+        opacity: 1;
       }
     }
   }
