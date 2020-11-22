@@ -13,14 +13,6 @@ const IndexPage = () => {
   useEffect(() => {
     const isMobile = window.innerWidth <= 767;
 
-    let settings = {
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    };
-
     if (isMobile) {
       settings = {
         dots: true,
@@ -31,6 +23,14 @@ const IndexPage = () => {
       };
     }
   });
+
+  let settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
     <Layout>
