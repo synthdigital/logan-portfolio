@@ -667,6 +667,7 @@ div h3 {
 
 div h5 {
   font-size: 20px;
+  color: #0c0c0c;
   font-family: hack, sans-serif;
 }
 
@@ -724,6 +725,10 @@ header .bm-menu-wrap {
 .bm-burger-bars {
   background: white;
   height: 10% !important;
+}
+
+.bm-item-list a {
+  font-family: brother-1816, sans-serif;
 }
 
 header {
@@ -918,7 +923,6 @@ header.fixed {
   -webkit-box-shadow: -10px 10px 23px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: -10px 10px 23px 0px rgba(0, 0, 0, 0.25);
   box-shadow: -10px 10px 23px 0px rgba(0, 0, 0, 0.25);
-  // pointer-events: none;
 }
 
 header .bm-burger-button,
@@ -1352,9 +1356,17 @@ div .display-block {
     padding: 0 50px;
   }
 
-  main .hero-section .content-container h1,
+  main .hero-section .content-container h1 {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+
   main h2 {
     font-size: 24px;
+  }
+
+  .home-page div.hero-section.container {
+    padding-top: 120px;
   }
 
   .show-mobile {
@@ -1382,7 +1394,8 @@ div .display-block {
   color: white;
 
   @media screen and (max-width: 767px) {
-    padding-top: 100px;
+    padding-top: 75px;
+    font-size: 15px;
   }
 }
 
@@ -1769,6 +1782,24 @@ body .left-0 {
       }
     }
   }
+
+  @media screen and (max-width: 767px) {
+    .col.service {
+      width: 100%;
+    }
+
+    .margin-bottom-125 {
+      margin-bottom: 00px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+
+    div.col.service {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .our-focus {
@@ -1874,12 +1905,37 @@ body .left-0 {
   }
 
   @media screen and (max-width: 767px) {
+    h5 {
+      margin-top: 0px;
+      margin-bottom: -20px;
+    }
+
     h2 {
+      font-size: 30px;
       margin-bottom: 20px;
+      margin-top: 30px;
+    }
+
+    h2,
+    p {
+      padding: 0 35px;
     }
 
     .row {
       flex-direction: column;
+      padding: 0;
+    }
+
+    .col {
+      padding: 0 0px;
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 24px;
+      letter-spacing: -0.4px;
+      color: #343434;
+      font-size: 17px;
     }
 
     .phone-img,
@@ -1888,10 +1944,13 @@ body .left-0 {
     .custom-icon,
     .dashboard {
       width: 100%;
+      max-width: 100%;
       margin-top: 25px;
-      margin-bottom: 25px;
+      margin-bottom: 0;
       margin-left: 0;
       margin-right: 0;
+      bottom: 0;
+      opacity: 1;
     }
 
     .margin-top-mobile-0 {
@@ -1899,6 +1958,10 @@ body .left-0 {
     }
 
     .margin-bottom-mobile-0 {
+      margin-bottom: 0;
+    }
+
+    .margin-bottom-200 {
       margin-bottom: 0;
     }
   }
@@ -1939,7 +2002,7 @@ body .left-0 {
     display: inline-block;
 
     @media screen and (max-width: 767px) {
-      font-size: 22px;
+      font-size: 30px;
     }
 
     &.is-closed {
@@ -1977,10 +2040,14 @@ body .left-0 {
   }
 
   @media screen and (max-width: 767px) {
+    .margin-top-60 {
+      margin-top: 10px;
+    }
+
     .Collapsible:nth-child(2) .Collapsible__trigger {
       &.is-closed {
         &::after {
-          right: 60px;
+          right: -50px;
         }
       }
 
@@ -1989,6 +2056,15 @@ body .left-0 {
           right: 60px;
         }
       }
+    }
+
+    .row {
+      padding: 0 32px;
+    }
+
+    p,
+    .step-one {
+      text-align: left;
     }
   }
 }
@@ -2028,6 +2104,11 @@ body .left-0 {
       font-weight: 300;
       margin-top: 20px;
       display: inline-block;
+
+      @media screen and (max-width: 767px) {
+        font-size: 17px;
+        margin-top: 0px;
+      }
     }
   }
 
@@ -2072,6 +2153,31 @@ body .left-0 {
 
     @media screen and (max-width: 1224px) {
       padding: 0 100px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .slick-arrow {
+      display: none !important;
+    }
+
+    .slick-slider {
+      padding: 0 32px;
+    }
+
+    .slick-dots {
+      left: 0;
+      bottom: -55px;
+    }
+
+    .slick-dots li button:before {
+      font-size: 15px;
+      color: #d8d8d8;
+    }
+
+    .slick-dots li.slick-active button:before {
+      color: #fff;
+      font-size: 15px;
     }
   }
 }
@@ -2124,6 +2230,14 @@ body .left-0 {
         margin-bottom: 25px;
       }
     }
+
+    @media screen and (max-width: 1224px) {
+      .col {
+        flex-basis: 45%;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+    }
   }
 }
 
@@ -2134,6 +2248,23 @@ body .left-0 {
 
   .container div.flexed {
     flex-direction: column-reverse;
+  }
+
+  img {
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  .height-60 {
+    height: 60px;
+  }
+
+  .height-63-mobile {
+    height: 63px;
+  }
+
+  .height-34-mobile {
+    height: 34px;
   }
 }
 

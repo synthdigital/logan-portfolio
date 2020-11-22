@@ -28,8 +28,8 @@ footer p {
 
 footer .row:first-child a {
   color: white;
-  text-decoration: none;
   transition-duration: 0.25s;
+  text-decoration: underline;
 }
 
 footer .row:first-child a:hover {
@@ -99,7 +99,6 @@ footer .socket a {
 
 footer .socket a:hover {
   color: #466777;
-  text-decoration: none;
 }
 
 footer .certGraphic {
@@ -149,5 +148,15 @@ footer button.pink-button {
 
   footer .socket p {
     width: 100%;
+  }
+
+  footer .row {
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  footer .spaced-out p a {
+    font-size: 21px;
   }
 }

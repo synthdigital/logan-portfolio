@@ -11,10 +11,10 @@ const Footer = () => {
         <Col className="spaced-out">
           <h3 className="margin-top-15">
             Like what you see?
-            <br /> Let’s start a conversation.
+            <br /> Let's talk.
           </h3>
 
-          <p>
+          <p className="hide-on-mobile">
             Not a form fan? Shoot us an email.
             <a
               href="mailto:howdy@synthdigital.com"
@@ -148,16 +148,31 @@ const Footer = () => {
             </div>
           </div>
         </Col>
+        <Col className="spaced-out show-mobile">
+          <div className="margin-top-50">
+            <p>
+              Not a form fan? Shoot us an email.
+              <a
+                href="mailto:howdy@synthdigital.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                howdy@synthdigital.com
+              </a>
+            </p>
+          </div>
+        </Col>
       </Row>
 
       <Row className="socket">
         {/* -- DO NOT USE GATSBY'S Link HERE --*/}
         {/* Changing the a tags to privacy policy, sitemap, or footer to gatsby's Link component breaks the header transparency fix   */}
-        <p>© 2020 - SynthDigital</p>
+
         <p>
           {" "}
           <a href="/privacy-policy">Privacy Policy</a>
         </p>
+        <p>© 2020 - SynthDigital</p>
       </Row>
     </footer>
   );

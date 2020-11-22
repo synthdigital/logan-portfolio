@@ -12,13 +12,25 @@ import "slick-carousel/slick/slick-theme.css";
 const IndexPage = () => {
   useEffect(() => {});
 
-  var settings = {
+  const isMobile = window.innerWidth <= 767;
+
+  let settings = {
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  if (isMobile) {
+    settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
+  }
 
   return (
     <Layout>
@@ -113,7 +125,7 @@ const IndexPage = () => {
               <img
                 src={require("../images/screen-shot-2020-10-22-at-3-45-29-pm.png")}
                 srcSet={`${require("../images/screen-shot-2020-10-22-at-3-45-29-pm.png")} 300w, ${require("../images/screen-shot-2020-10-22-at-3-45-29-pm@2x.png")} 768w, ${require("../images/screen-shot-2020-10-22-at-3-45-29-pm@3x.png")} 1280w`}
-                className="website-design margin-bottom-mobile-0"
+                className="website-design margin-bottom-mobile-0 hide-on-mobile"
                 alt="website design"
               />
             </Col>
@@ -139,7 +151,7 @@ const IndexPage = () => {
               document.querySelector(".custom-icon").classList.add("animate");
             }}
           />
-          <Row className="margin-top-160 margin-top-mobile-0 margin-bottom-200">
+          <Row className="margin-top-160 margin-top-mobile-0 margin-bottom-200 flexed">
             <Col className="left">
               <h2>
                 Enterprise experience
@@ -147,9 +159,11 @@ const IndexPage = () => {
               </h2>
               <p>
                 We transform legacy enterprise apps into consumer-grade
-                experiences, increasing efficiency, productivity and morale. The
-                implementation of elegant and effective human-centric design is
-                at the forefront of our design ethos, for both consumer and
+                experiences, increasing efficiency, productivity and morale.{" "}
+              </p>
+              <p>
+                The implementation of elegant and effective human-centric design
+                is at the forefront of our design ethos, for both consumer and
                 enterprise applications.
               </p>
             </Col>
@@ -158,7 +172,7 @@ const IndexPage = () => {
               <img
                 src={require("../images/screen-shot-2020-10-22-at-3-50-01-pm.png")}
                 srcSet={`${require("../images/screen-shot-2020-10-22-at-3-50-01-pm.png")} 300w, ${require("../images/screen-shot-2020-10-22-at-3-50-01-pm@2x.png")} 768w, ${require("../images/screen-shot-2020-10-22-at-3-50-01-pm@3x.png")} 1280w`}
-                className="dashboard margin-top-75 hide-on-mobile"
+                className="dashboard margin-top-75"
                 alt="Dashboard"
               />
             </Col>
@@ -230,7 +244,10 @@ const IndexPage = () => {
               </p>
 
               <div className="step-one">
-                <Collapsible trigger="I. Research & Discovery">
+                <Collapsible
+                  className="hide-on-mobile"
+                  trigger="I. Research & Discovery"
+                >
                   <p>
                     At the outset of the project we consolidate all available
                     documentation and we schedule UX workshops with key
@@ -254,7 +271,34 @@ const IndexPage = () => {
                     the extra mile to serve both the brand and customer better.
                   </p>
                 </Collapsible>
-                <Collapsible trigger="II. Digital Strategy & Concepting">
+                <Collapsible className="show-mobile" trigger="Research">
+                  <p>
+                    At the outset of the project we consolidate all available
+                    documentation and we schedule UX workshops with key
+                    stakeholders and relevant teams to explore different ideas
+                    and plans. From here UX designers will engage with current
+                    or potential customers if possible to understand their
+                    desires, expectations, affinities, problems and pain points,
+                    as well as employ various techniques of market research,
+                    both qualitative and quantitative.
+                  </p>
+
+                  <p>
+                    At times, brands are reluctant towards conducting prior
+                    research as it demands time and resources, but the failure
+                    to do so will assuredly cost in the long run. Without
+                    appropriate research the true scope of customer needs cannot
+                    be assessed and determined. Research and discovery is the
+                    very foundation and impetus with which UI/UX design
+                    decisions are driven. Instead of relying on intuitions and
+                    gambles, it’s best to take a practical approach, and walk
+                    the extra mile to serve both the brand and customer better.
+                  </p>
+                </Collapsible>
+                <Collapsible
+                  className="hide-on-mobile"
+                  trigger="II. Digital Strategy & Concepting"
+                >
                   <p>
                     With the research and discovery results we synthesize a
                     robust digital strategy, which in turn pilots the entire
@@ -267,7 +311,35 @@ const IndexPage = () => {
                     approval.
                   </p>
                 </Collapsible>
-                <Collapsible trigger="III. UI/UX Design">
+                <Collapsible className="show-mobile" trigger="Digital Strategy">
+                  <p>
+                    With the research and discovery results we synthesize a
+                    robust digital strategy, which in turn pilots the entire
+                    design process. The digital strategy begins by exploring
+                    different concepts and fine tuning key variables that will
+                    define a strong strategic vertical. From here, we begin
+                    concepting core elements such as information architecture
+                    and overall UI direction. We finish off this phase by
+                    presenting stakeholders with our concept for validation and
+                    approval.
+                  </p>
+                </Collapsible>
+                <Collapsible
+                  trigger="III. UI/UX Design"
+                  className="hide-on-mobile"
+                >
+                  <p>
+                    We kickoff this phase by hitting the ground running with our
+                    freshly minted digital strategy and design concept. Various
+                    activities are performed including wireframing, user flow
+                    mapping, UI design, and prototyping. We utilize a
+                    streamlined process of tools such as Zeplin to hand off our
+                    assets to developers. A comprehensive brand style guide,
+                    which includes component libraries, guidelines and user
+                    maps, is also developed at this stage.
+                  </p>
+                </Collapsible>
+                <Collapsible trigger="UI/UX Design" className="show-mobile">
                   <p>
                     We kickoff this phase by hitting the ground running with our
                     freshly minted digital strategy and design concept. Various
@@ -341,35 +413,55 @@ const IndexPage = () => {
               <img
                 src={require("../svgs/varo-bank-logo-1.svg")}
                 alt="Varo Logo"
-                className="logo one"
+                className="logo one height-34-mobile"
               />
             </Col>
             <Col>
               <img
                 src={require("../svgs/group-17.svg")}
                 alt="Equinedge Logo"
-                className="logo two"
+                className="logo two hide-on-mobile"
+              />
+              <img
+                src={require("../svgs/group-225.svg")}
+                alt="UM Logo"
+                className="logo five show-mobile height-34-mobile"
               />
             </Col>
             <Col>
               <img
                 src={require("../svgs/group-5.svg")}
                 alt="CR Logo"
-                className="logo three"
+                className="logo three  hide-on-mobile height-63-mobile"
+              />
+              <img
+                src={require("../svgs/group.svg")}
+                alt="Hospital Integration Logo"
+                className="logo four show-mobile"
               />
             </Col>
             <Col>
               <img
                 src={require("../svgs/group.svg")}
                 alt="Hospital Integration Logo"
-                className="logo four"
+                className="logo four hide-on-mobile"
+              />
+              <img
+                src={require("../svgs/group-5.svg")}
+                alt="CR Logo"
+                className="logo three height-63-mobile show-mobile"
               />
             </Col>
             <Col>
               <img
                 src={require("../svgs/group-225.svg")}
                 alt="UM Logo"
-                className="logo five"
+                className="logo five hide-on-mobile"
+              />
+              <img
+                src={require("../svgs/lion-cut.svg")}
+                alt="Equinedge Logo"
+                className="logo two show-mobile height-60"
               />
             </Col>
             <Col>
