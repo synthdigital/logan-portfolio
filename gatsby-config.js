@@ -6,16 +6,6 @@ module.exports = {
     author: `@ghughes139`,
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: "UA-48748407-9",
-    //     head: true,
-    //     anonymize: true,
-    //     respectDNT: true,
-    //     defer: false,
-    //   },
-    // },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     // {
