@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React, { useEffect } from "react";
 import { Link } from "gatsby";
+import { Helmet } from "react-helmet";
 import CookieConsent from "react-cookie-consent";
 
 import Burger from "../hamburger_menu/HamburgerMenu";
@@ -26,6 +27,18 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
         textTransform: "uppercase",
       }}
     >
+      <Helmet>
+        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-2KEWZFWKWP"
+        ></script>
+        <script>
+          {`window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-2KEWZFWKWP')`}
+        </script>
+      </Helmet>
       <CookieConsent
         cookieName="myAwesomeCookieName2"
         style={{ background: "#fff", justifyContent: "Center" }}
@@ -59,15 +72,6 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
       />
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-2KEWZFWKWP"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || []; function gtag()
-        {dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-2KEWZFWKWP');
-      </script>
       <nav className="mainHeader navbar" role="navigation">
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">

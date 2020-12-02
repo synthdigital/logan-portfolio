@@ -1119,6 +1119,10 @@ main .col {
   color: #466777;
 }
 
+.left-align {
+  text-align: left;
+}
+
 .centered-text {
   text-align: center;
 }
@@ -1824,6 +1828,14 @@ body .left-0 {
     &.right {
       padding-right: 0;
     }
+  }
+
+  figcaption {
+    font-family: hack, sans-serif;
+    font-size: 12px;
+    line-height: 4.17;
+    letter-spacing: -0.36px;
+    color: #000000;
   }
 
   .phone-img {

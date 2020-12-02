@@ -80,12 +80,14 @@ const IndexPage = () => {
             </Col>
 
             <Col className="right">
-              <img
-                src={require("../images/screen-shot-2020-10-08-at-4-16-35-pm.png")}
-                srcSet={`${require("../images/screen-shot-2020-10-08-at-4-16-35-pm.png")} 300w, ${require("../images/screen-shot-2020-10-08-at-4-16-35-pm@2x.png")} 768w, ${require("../images/screen-shot-2020-10-08-at-4-16-35-pm@3x.png")} 1280w`}
-                className="phone-img"
-                alt="mobile-app"
-              />
+              <figure className="phone-img">
+                <img
+                  src={require("../images/screen-shot-2020-10-08-at-4-16-35-pm.png")}
+                  srcSet={`${require("../images/screen-shot-2020-10-08-at-4-16-35-pm.png")} 300w, ${require("../images/screen-shot-2020-10-08-at-4-16-35-pm@2x.png")} 768w, ${require("../images/screen-shot-2020-10-08-at-4-16-35-pm@3x.png")} 1280w`}
+                  alt="mobile-app"
+                />
+                <figcaption>EquinEdge (multiplatform UI/UX)</figcaption>
+              </figure>
             </Col>
           </Row>
           <Waypoint
@@ -95,12 +97,16 @@ const IndexPage = () => {
           />
           <Row className="margin-top-50">
             <Col className="right-align left">
-              <img
-                src={require("../images/screen-shot-2020-10-09-at-12-32-02-pm.png")}
-                srcSet={`${require("../images/screen-shot-2020-10-09-at-12-32-02-pm.png")} 300w, ${require("../images/screen-shot-2020-10-09-at-12-32-02-pm.png")} 768w, ${require("../images/screen-shot-2020-10-09-at-12-32-02-pm@3x.png")} 1280w`}
-                className="dog-logo"
-                alt="dog logo"
-              />
+              <figure className="dog-logo">
+                <img
+                  src={require("../images/screen-shot-2020-10-09-at-12-32-02-pm.png")}
+                  srcSet={`${require("../images/screen-shot-2020-10-09-at-12-32-02-pm.png")} 300w, ${require("../images/screen-shot-2020-10-09-at-12-32-02-pm.png")} 768w, ${require("../images/screen-shot-2020-10-09-at-12-32-02-pm@3x.png")} 1280w`}
+                  alt="dog logo"
+                />
+                <figcaption className="left-align">
+                  GoBone (brand/identity)
+                </figcaption>
+              </figure>
             </Col>
 
             <Col className="margin-top-140 right">
@@ -123,22 +129,24 @@ const IndexPage = () => {
           />
           <Row className="margin-top-110">
             <Col className="left">
-              {" "}
-              <img
-                src={require("../images/screen-shot-2020-10-22-at-3-45-29-pm.png")}
-                srcSet={`${require("../images/screen-shot-2020-10-22-at-3-45-29-pm.png")} 300w, ${require("../images/screen-shot-2020-10-22-at-3-45-29-pm@2x.png")} 768w, ${require("../images/screen-shot-2020-10-22-at-3-45-29-pm@3x.png")} 1280w`}
-                className="website-design margin-bottom-mobile-0 hide-on-mobile"
-                alt="website design"
-              />
+              <figure className="website-design margin-bottom-mobile-0 hide-on-mobile">
+                <img
+                  src={require("../images/screen-shot-2020-10-22-at-3-45-29-pm.png")}
+                  srcSet={`${require("../images/screen-shot-2020-10-22-at-3-45-29-pm.png")} 300w, ${require("../images/screen-shot-2020-10-22-at-3-45-29-pm@2x.png")} 768w, ${require("../images/screen-shot-2020-10-22-at-3-45-29-pm@3x.png")} 1280w`}
+                  alt="website design"
+                />
+                <figcaption>Varo Money (branding, web design)</figcaption>
+              </figure>
             </Col>
             <Col className="margin-top-160 right">
-              {" "}
-              <img
-                src={require("../images/group-2.png")}
-                srcSet={`${require("../images/group-2.png")} 300w, ${require("../images/group-2@2x.png")} 768w, ${require("../images/group-2@3x.png")} 1280w`}
-                className="custom-icon hide-on-mobile"
-                alt="custom icon"
-              />
+              <figure className="custom-icon hide-on-mobile">
+                <img
+                  src={require("../images/group-2.png")}
+                  srcSet={`${require("../images/group-2.png")} 300w, ${require("../images/group-2@2x.png")} 768w, ${require("../images/group-2@3x.png")} 1280w`}
+                  alt="custom icon"
+                />
+                <figcaption>Tu Vida (consumer mobile)</figcaption>
+              </figure>
             </Col>
           </Row>
           <Waypoint
@@ -171,12 +179,16 @@ const IndexPage = () => {
             </Col>
 
             <Col className="right">
-              <img
-                src={require("../images/screen-shot-2020-10-22-at-3-50-01-pm.png")}
-                srcSet={`${require("../images/screen-shot-2020-10-22-at-3-50-01-pm.png")} 300w, ${require("../images/screen-shot-2020-10-22-at-3-50-01-pm@2x.png")} 768w, ${require("../images/screen-shot-2020-10-22-at-3-50-01-pm@3x.png")} 1280w`}
-                className="dashboard margin-top-75"
-                alt="Dashboard"
-              />
+              <figure className="dashboard margin-top-75">
+                <img
+                  src={require("../images/screen-shot-2020-10-22-at-3-50-01-pm.png")}
+                  srcSet={`${require("../images/screen-shot-2020-10-22-at-3-50-01-pm.png")} 300w, ${require("../images/screen-shot-2020-10-22-at-3-50-01-pm@2x.png")} 768w, ${require("../images/screen-shot-2020-10-22-at-3-50-01-pm@3x.png")} 1280w`}
+                  alt="Dashboard"
+                />
+                <figcaption>
+                  Callahan Roach (branding, web, mobile app)
+                </figcaption>
+              </figure>
             </Col>
           </Row>
           <Waypoint
