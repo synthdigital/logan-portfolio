@@ -1,6 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { SRLWrapper } from "simple-react-lightbox";
+import { lazyload } from "react-lazyload";
+
 import "./PortfolioImageGrid.scss";
 
 const PortfolioImageGrid = () => {
@@ -18,147 +20,162 @@ const PortfolioImageGrid = () => {
       <SRLWrapper options={options}>
         <h5 id="apps">Apps UI/UX</h5>
         <div className="apps-container">
-          <img
-            src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-24 at 4.37.13 PM.png")}
-            alt="Equinedge App Stats"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-24 at 4.41.41 PM.png")}
-            alt="Equinedge Top Horses View"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-24 at 4.47.15 PM.png")}
-            alt="Equinedge Breaking News"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 6.00.08 PM.png")}
-            alt="TuVida Select Tags View"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 6.36.34 PM.png")}
-            alt="TuVida Profile View"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.22.07 PM.png")}
-            alt="TuVida Preview"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.23.59 PM.png")}
-            alt="TuVida"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.26.26 PM.png")}
-            alt="TuVida My Feed View"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.32.03 PM.png")}
-            alt="TuVida Choose A Temas"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.43.25 PM.png")}
-            alt="TuVida Answers View"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.45.14 PM.png")}
-            alt="TuVida Profile Blue"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.47.24 PM.png")}
-            alt="TuVida Profile Red"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TV-Feed-Default.jpg")}
-            alt="TuVida TV Feed Default"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TV-HaAsh-Profile.jpg")}
-            alt="TuVida Haash Profile"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TV-Post-Temas.jpg")}
-            alt="TuVida Home"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TV-Post.jpg")}
-            alt="TuVida TV Post"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TV-Profile.jpg")}
-            alt="TuVida TV Profile"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/TV-Survey.jpg")}
-            alt="TV Survey"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-25 at 3.06.55 PM.png")}
-            alt="Hospital Integration Patient Detail View"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-25 at 3.09.34 PM.png")}
-            alt="Hospital Integration Tasks View"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-25 at 3.17.07 PM.png")}
-            alt="Hospital Integration Compliance"
-            className="app"
-          />
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-24 at 4.37.13 PM.png")}
+              alt="Equinedge App Stats"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-24 at 4.41.41 PM.png")}
+              alt="Equinedge Top Horses View"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-24 at 4.47.15 PM.png")}
+              alt="Equinedge Breaking News"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 6.00.08 PM.png")}
+              alt="TuVida Select Tags View"
+              className="app"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 6.36.34 PM.png")}
+              alt="TuVida Profile View"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.22.07 PM.png")}
+              alt="TuVida Preview"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.23.59 PM.png")}
+              alt="TuVida"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.26.26 PM.png")}
+              alt="TuVida My Feed View"
+              className="app"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.32.03 PM.png")}
+              alt="TuVida Choose A Temas"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.43.25 PM.png")}
+              alt="TuVida Answers View"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.45.14 PM.png")}
+              alt="TuVida Profile Blue"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/TuVida-Screen Shot 2020-11-30 at 8.47.24 PM.png")}
+              alt="TuVida Profile Red"
+              className="app"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/TV-Feed-Default.jpg")}
+              alt="TuVida TV Feed Default"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/TV-HaAsh-Profile.jpg")}
+              alt="TuVida Haash Profile"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/TV-Post-Temas.jpg")}
+              alt="TuVida Home"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/TV-Post.jpg")}
+              alt="TuVida TV Post"
+              className="app"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/TV-Profile.jpg")}
+              alt="TuVida TV Profile"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/TV-Survey.jpg")}
+              alt="TV Survey"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-25 at 3.06.55 PM.png")}
+              alt="Hospital Integration Patient Detail View"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-25 at 3.09.34 PM.png")}
+              alt="Hospital Integration Tasks View"
+              className="app"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-25 at 3.17.07 PM.png")}
+              alt="Hospital Integration Compliance"
+              className="app"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.21.32 PM.png")}
-            alt="App View"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.51.32 PM.png")}
-            alt="Login View"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.52.47 PM.png")}
-            alt="Info View"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.53.50 PM.png")}
-            alt="Parts View"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 11.15.47 PM.png")}
-            alt="Get A Quote View"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/Braveheart1.png")}
-            alt="Braveheart Company Description"
-            className="app"
-          />
-          <img
-            src={require("../../images/portfolio-images/Braveheart2.png")}
-            alt="Braveheart Charts"
-            className="app"
-          />
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.21.32 PM.png")}
+              alt="App View"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.51.32 PM.png")}
+              alt="Login View"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.52.47 PM.png")}
+              alt="Info View"
+              className="app"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.53.50 PM.png")}
+              alt="Parts View"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 11.15.47 PM.png")}
+              alt="Get A Quote View"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/Braveheart1.png")}
+              alt="Braveheart Company Description"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/Braveheart2.png")}
+              alt="Braveheart Charts"
+              className="app"
+            />
+          </lazyload>
+
           {/* <img
             src={require("../../images/portfolio-images/Braveheart3.png")}
             alt="Braveheart Reports"
