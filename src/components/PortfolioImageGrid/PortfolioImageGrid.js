@@ -191,247 +191,259 @@ const PortfolioImageGrid = () => {
           Identity
         </h5>
         <div className="logos">
-          <img
-            src={require("../../images/portfolio-images/VerifiedClean.png")}
-            alt="Verified Clean"
-            className="logo"
-          />
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/VerifiedClean.png")}
+              alt="Verified Clean"
+              className="logo"
+            />
+            <img
+              src={require("../../images/portfolio-images/SmartPrice.png")}
+              alt="Contractor's Smart Price Logo"
+              className="logo"
+            />
+            <img
+              src={require("../../images/portfolio-images/PatientVoice.png")}
+              alt="Patient Voice Logo"
+              className="logo"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/PriceDelta.png")}
+              alt="Price Delta logo"
+              className="logo"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/SmartPrice.png")}
-            alt="Contractor's Smart Price Logo"
-            className="logo"
-          />
+            <img
+              src={require("../../images/portfolio-images/ObiaNaturals.png")}
+              alt="OBIA Naturals logo"
+              className="logo"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/PatientVoice.png")}
-            alt="Patient Voice Logo"
-            className="logo"
-          />
+            <img
+              src={require("../../images/portfolio-images/MarquisStudent.png")}
+              alt="Marquis Student Living Logo"
+              className="logo"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/EquinEdge.png")}
+              alt="Equinedge Logo"
+              className="logo"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/PriceDelta.png")}
-            alt="Price Delta logo"
-            className="logo"
-          />
+            <img
+              src={require("../../images/portfolio-images/EZlytix.png")}
+              alt="Ezlytix Logo"
+              className="logo"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/ObiaNaturals.png")}
-            alt="OBIA Naturals logo"
-            className="logo"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/MarquisStudent.png")}
-            alt="Marquis Student Living Logo"
-            className="logo"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/EquinEdge.png")}
-            alt="Equinedge Logo"
-            className="logo"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/EZlytix.png")}
-            alt="Ezlytix Logo"
-            className="logo"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/GoBone.png")}
-            alt="Go Bone Logo"
-            className="logo"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/GrampiansPure.png")}
-            alt="Grampians Logo"
-            className="logo"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/DBT of Texas.png")}
-            alt="DBT of Texas"
-            className="logo"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/AlohaFresh.png")}
-            alt="Aloha Fresh Logo"
-            className="logo"
-          />
+            <img
+              src={require("../../images/portfolio-images/GoBone.png")}
+              alt="Go Bone Logo"
+              className="logo"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/GrampiansPure.png")}
+              alt="Grampians Logo"
+              className="logo"
+            />
+            <img
+              src={require("../../images/portfolio-images/DBT of Texas.png")}
+              alt="DBT of Texas"
+              className="logo"
+            />
+            <img
+              src={require("../../images/portfolio-images/AlohaFresh.png")}
+              alt="Aloha Fresh Logo"
+              className="logo"
+            />{" "}
+          </lazyload>
         </div>
         <h5 className="margin-top-50" id="icons">
           Iconography
         </h5>
 
         <div className="icons-section">
-          <img
-            src={require("../../images/portfolio-images/DBTIcons.png")}
-            alt="DBT Icons"
-            className="icons"
-          />
-          <img
-            src={require("../../images/portfolio-images/HealthcarePins.png")}
-            alt="Healthcare Pins"
-            className="icons"
-          />
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/DBTIcons.png")}
+              alt="DBT Icons"
+              className="icons"
+            />
+            <img
+              src={require("../../images/portfolio-images/HealthcarePins.png")}
+              alt="Healthcare Pins"
+              className="icons"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/HospitalIcons.png")}
+              alt="Hospital Icons"
+              className="icons"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/HospitalIcons.png")}
-            alt="Hospital Icons"
-            className="icons"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/MiscIcons.png")}
-            alt="Misc Icons"
-            className="icons"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/MiscIcons2.png")}
-            alt="Misc Icons"
-            className="icons"
-          />
+            <img
+              src={require("../../images/portfolio-images/MiscIcons.png")}
+              alt="Misc Icons"
+              className="icons"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/MiscIcons2.png")}
+              alt="Misc Icons"
+              className="icons"
+            />
+          </lazyload>
         </div>
         <h5 className="margin-top-50" id="website">
           Websites
         </h5>
 
         <div className="website-container">
-          <img
-            src={require("../../images/portfolio-images/Buzzlogix.png")}
-            alt="Buzzlogix Home Page"
-            className="website"
-          />
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/Buzzlogix.png")}
+              alt="Buzzlogix Home Page"
+              className="website"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 9.45.09 PM.png")}
-            alt="Callahan Roach Pricing"
-            className="website"
-          />
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 9.45.09 PM.png")}
+              alt="Callahan Roach Pricing"
+              className="website"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.11.16 PM.png")}
-            alt="CallahanRoach1"
-            className="website"
-          />
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.11.16 PM.png")}
+              alt="CallahanRoach1"
+              className="website"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.20.22 PM.png")}
+              alt="CallahanRoach"
+              className="website"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.20.22 PM.png")}
-            alt="CallahanRoach"
-            className="website"
-          />
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.20.37 PM.png")}
+              alt="Admin Portal"
+              className="website"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.20.37 PM.png")}
-            alt="Admin Portal"
-            className="website"
-          />
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.20.53 PM.png")}
+              alt="Form"
+              className="website"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/DBTofTexas.png")}
+              alt="DBT of Texas Home"
+              className="website"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.20.53 PM.png")}
-            alt="Form"
-            className="website"
-          />
-          <img
-            src={require("../../images/portfolio-images/DBTofTexas.png")}
-            alt="DBT of Texas Home"
-            className="website"
-          />
+            <img
+              src={require("../../images/portfolio-images/DDSynergy.png")}
+              alt="D&D Synergy"
+              className="website"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/DDSynergy.png")}
-            alt="D&D Synergy"
-            className="website"
-          />
+            <img
+              src={require("../../images/portfolio-images/EquinEdge_1.png")}
+              alt="Equinedge Home"
+              className="website"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-23 at 3.18.36 PM.png")}
+              alt="Equinedge Stats View"
+              className="website"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/EquinEdge_1.png")}
-            alt="Equinedge Home"
-            className="website"
-          />
+            <img
+              src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-24 at 4.08.38 PM.png")}
+              alt="Equinedge Dashboard"
+              className="website"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-23 at 3.18.36 PM.png")}
-            alt="Equinedge Stats View"
-            className="website"
-          />
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.21.23 PM.png")}
+              alt="Hospital Integration Help View"
+              className="website"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.21.40 PM.png")}
+              alt="Hospital Integration Patient Info"
+              className="website"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-24 at 4.08.38 PM.png")}
-            alt="Equinedge Dashboard"
-            className="website"
-          />
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.39.28 PM.png")}
+              alt="Hospital Integration Satisfaction"
+              className="website"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.21.23 PM.png")}
-            alt="Hospital Integration Help View"
-            className="website"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.21.40 PM.png")}
-            alt="Hospital Integration Patient Info"
-            className="website"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.39.28 PM.png")}
-            alt="Hospital Integration Satisfaction"
-            className="website"
-          />
-
-          {/* <img
+            {/* <img
           src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.47.29 PM.png")}
           alt="Hospital Integration Patients"
           className="website"
         /> */}
 
-          <img
-            src={require("../../images/portfolio-images/NQuotient.png")}
-            alt="NQuotient Home"
-            className="website"
-          />
+            <img
+              src={require("../../images/portfolio-images/NQuotient.png")}
+              alt="NQuotient Home"
+              className="website"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/PatientVoice_1.png")}
+              alt="Hospital Integrations Inc Home"
+              className="website"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/PatientVoice_1.png")}
-            alt="Hospital Integrations Inc Home"
-            className="website"
-          />
+            <img
+              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-11-30 at 5.48.34 PM.png")}
+              alt="QUO Home"
+              className="website"
+            />
 
-          <img
-            src={require("../../images/portfolio-images/Quo-Screen Shot 2020-11-30 at 5.48.34 PM.png")}
-            alt="QUO Home"
-            className="website"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/Quo-Screen Shot 2020-11-30 at 5.49.14 PM.png")}
-            alt="QUO Data View"
-            className="website"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/Quo-Screen Shot 2020-12-01 at 12.07.46 AM.png")}
-            alt="QUO Dashboard"
-            className="website"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.26.53 PM.png")}
-            alt="UM Price Quote"
-            className="website"
-          />
-
-          <img
-            src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.37.01 PM.png")}
-            alt="UM Search History"
-            className="website"
-          />
+            <img
+              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-11-30 at 5.49.14 PM.png")}
+              alt="QUO Data View"
+              className="website"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-12-01 at 12.07.46 AM.png")}
+              alt="QUO Dashboard"
+              className="website"
+            />
+            <img
+              src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.26.53 PM.png")}
+              alt="UM Price Quote"
+              className="website"
+            />
+            <img
+              src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.37.01 PM.png")}
+              alt="UM Search History"
+              className="website"
+            />{" "}
+          </lazyload>
         </div>
       </SRLWrapper>
     </Container>
