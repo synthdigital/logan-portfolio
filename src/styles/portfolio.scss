@@ -1,0 +1,26 @@
+.portfolio {
+  .hero-section {
+    background: linear-gradient(to bottom, #1252ff, #5285ee);
+
+    h1 {
+      color: white;
+      padding: 140px 0 170px 0;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        background: transparent;
+        border: none;
+        font-family: Brother-1816, sans-serif;
+        font-size: 33px;
+        font-weight: 500;
+        line-height: 1.52;
+        letter-spacing: -0.99px;
+        color: #ffffff;
+      }
+    }
+  }
+}

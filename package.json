@@ -39,6 +39,7 @@
     "react-scroll-parallax": "^2.3.2",
     "react-slick": "^0.27.13",
     "react-waypoint": "^9.0.2",
+    "simple-react-lightbox": "^3.3.4-2",
     "slick-carousel": "^1.8.1",
     "typescript": "^3.8.3"
   },

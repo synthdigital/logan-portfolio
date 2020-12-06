@@ -1,0 +1,47 @@
+div.portfolio-grid {
+  margin: 0 auto;
+  max-width: 1260px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  div {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .logo,
+  .website {
+    width: 31%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .app {
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .icons {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  img {
+    margin-top: 75px;
+    object-fit: cover;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 10px 26px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 5px 10px 26px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 5px 10px 26px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  h5 {
+    margin-top: 75px;
+  }
+}
