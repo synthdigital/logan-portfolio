@@ -13,27 +13,26 @@ const PortfolioImageGrid = ({ active }) => {
     changeShownImages(active);
   });
 
-  const appImages = document.querySelectorAll(".apps-container img");
-  const appContainer = document.querySelector(".apps-container");
-  const appTitle = document.getElementById("apps");
-
-  const logoImages = document.querySelectorAll(".logos img");
-  const logoContainer = document.querySelector(".logos");
-  const logosTitle = document.getElementById("logos");
-
-  const iconImages = document.querySelectorAll(".icons-section img");
-  const iconsContainer = document.querySelector(".icons-section");
-  const iconsTitle = document.getElementById("icons");
-
-  const websiteImages = document.querySelectorAll(".website-container img");
-  const websiteContainer = document.querySelector(".website-container");
-  const websiteTitle = document.getElementById("website");
-
-  const allImages = document.querySelectorAll(".portfolio-grid img");
-  const allContainers = document.querySelectorAll(".img-container");
-  const allTitles = document.querySelectorAll(".category-title");
-
   const changeShownImages = active => {
+    const appImages = document.querySelectorAll(".apps-container img");
+    const appContainer = document.querySelector(".apps-container");
+    const appTitle = document.getElementById("apps");
+
+    const logoImages = document.querySelectorAll(".logos img");
+    const logoContainer = document.querySelector(".logos");
+    const logosTitle = document.getElementById("logos");
+
+    const iconImages = document.querySelectorAll(".icons-section img");
+    const iconsContainer = document.querySelector(".icons-section");
+    const iconsTitle = document.getElementById("icons");
+
+    const websiteImages = document.querySelectorAll(".website-container img");
+    const websiteContainer = document.querySelector(".website-container");
+    const websiteTitle = document.getElementById("website");
+
+    const allImages = document.querySelectorAll(".portfolio-grid img");
+    const allContainers = document.querySelectorAll(".img-container");
+    const allTitles = document.querySelectorAll(".category-title");
     hideAll();
     setTimeout(() => {
       if (active === "all") {
@@ -75,6 +74,10 @@ const PortfolioImageGrid = ({ active }) => {
   };
 
   const hideAll = () => {
+    const allImages = document.querySelectorAll(".portfolio-grid img");
+    const allContainers = document.querySelectorAll(".img-container");
+    const allTitles = document.querySelectorAll(".category-title");
+
     allImages.forEach(img => {
       img.classList.add("hidden");
     });
