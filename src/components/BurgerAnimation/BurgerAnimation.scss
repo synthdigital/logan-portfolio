@@ -1,22 +1,43 @@
 .navbar-brand > button:nth-child(2) {
   position: absolute;
-  right: 0px;
+  right: 1px;
   top: 10px;
   z-index: 9999;
   background: transparent;
+  transition: 0.5s;
+  transition-delay: 0s;
+
+  @media screen and (max-width: 767px) {
+    top: 5px;
+  }
 }
 
 header {
-  &.end-transparency .eJmXge::before,
-  &.end-transparency .eJmXge::after,
-  &.end-transparency .eJmXge {
+  &.end-transparency .opening span::before,
+  &.end-transparency .opening span::after,
+  &.end-transparency .opening span {
     background: #ff656c;
   }
 
-  .cLSYhi::before,
-  .cLSYhi::after,
-  .cLSYhi {
-    background-color: #000;
+  .open span,
+  .open span:before,
+  .open span:after {
+    background-color: #000 !important;
+  }
+
+  .opening span,
+  .opening span:before,
+  .opening span:after {
+    background-color: #000 !important;
+  }
+
+  .navbar-brand .open {
+    transition-delay: 0.1s;
+    right: -5%;
+
+    @media screen and (max-width: 1224px) {
+      right: -1%;
+    }
   }
 
   .bm-item-list {
