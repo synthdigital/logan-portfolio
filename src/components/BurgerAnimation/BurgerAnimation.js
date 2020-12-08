@@ -6,12 +6,16 @@ const App = () => {
   const [isActive, setIsActive] = useState(false);
 
   const setClass = state => {
-    if (state && document.querySelector(".opening")) {
-      console.log("hi");
-      document.querySelector(".opening").classList.add("open");
-    } else if (document.querySelector(".opening")) {
-      console.log("bye");
-      document.querySelector(".opening").classList.remove("open");
+    if (typeof window === "undefined" || !window.document) {
+      return;
+    } else {
+      if (state && document.querySelector(".opening")) {
+        console.log("hi");
+        document.querySelector(".opening").classList.add("open");
+      } else if (document.querySelector(".opening")) {
+        console.log("bye");
+        document.querySelector(".opening").classList.remove("open");
+      }
     }
   };
 
