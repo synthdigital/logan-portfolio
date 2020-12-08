@@ -386,7 +386,9 @@ const IndexPage = () => {
                     again!”
                   </p>
                   <cite>
-                    Roger Van Duinen, Co-Founder
+                    <span className="no-break">
+                      Roger Van Duinen, Co-Founder
+                    </span>
                     <br /> Varo Money
                   </cite>
                 </div>
@@ -398,7 +400,7 @@ const IndexPage = () => {
                     His work exceeds expectations.”
                   </p>
                   <cite>
-                    Jeffrey Scott Smith, Founder,
+                    Jeffrey Scott Smith, Founder
                     <br /> Hospital Integration Inc.
                   </cite>
                 </div>
@@ -413,7 +415,7 @@ const IndexPage = () => {
                     great ideas.”
                   </p>
                   <cite>
-                    Scott McKeever, Founder & CEO,
+                    Scott McKeever, Founder & CEO
                     <br /> EquinEdge
                   </cite>
                 </div>

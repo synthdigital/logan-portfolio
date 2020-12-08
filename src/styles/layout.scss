@@ -735,6 +735,10 @@ header {
   z-index: 900;
   position: relative;
   transition-duration: 0.5s;
+  pointer-events: none;
+  .navbar-brand {
+    pointer-events: all;
+  }
   .navbar-end a.button {
     color: #0092fb;
     text-decoration: none;
@@ -1099,6 +1103,10 @@ main .col {
   color: #00ddc7;
 }
 
+.green-text {
+  color: #00db00;
+}
+
 .pink-text {
   color: #ff3975;
 }
@@ -1137,6 +1145,10 @@ main .col {
 
 .hide-me {
   display: none;
+}
+
+.no-break {
+  white-space: nowrap;
 }
 
 main .compressed-content,
@@ -1836,6 +1848,10 @@ body .left-0 {
     line-height: 4.17;
     letter-spacing: -0.36px;
     color: #000000;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
 
   .phone-img {
@@ -1975,6 +1991,10 @@ body .left-0 {
 
     .margin-bottom-200 {
       margin-bottom: 0;
+    }
+
+    img {
+      min-width: 100%;
     }
   }
 }

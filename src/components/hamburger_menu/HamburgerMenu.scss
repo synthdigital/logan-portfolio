@@ -1,0 +1,29 @@
+.bm-cross-button span {
+  display: none !important;
+}
+
+.bm-cross-button button {
+  left: -70px !important;
+  top: 0px;
+  width: 70px !important;
+  height: 70px !important;
+}
+
+.bm-burger-button .bm-burger-bars {
+  opacity: 0 !important;
+}
+
+.bm-overlay {
+  width: 300px !important;
+  right: 0;
+  background: red !important;
+}
+
+.navbar-brand > div,
+.bm-overlay {
+  pointer-events: none;
+}
+
+.navbar-brand .bm-menu-wrap {
+  pointer-events: all;
+}

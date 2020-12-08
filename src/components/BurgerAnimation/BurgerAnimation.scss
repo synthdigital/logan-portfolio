@@ -1,0 +1,25 @@
+.navbar-brand > button:nth-child(2) {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  z-index: 9999;
+  background: transparent;
+}
+
+header {
+  &.end-transparency .eJmXge::before,
+  &.end-transparency .eJmXge::after,
+  &.end-transparency .eJmXge {
+    background: #ff656c;
+  }
+
+  .cLSYhi::before,
+  .cLSYhi::after,
+  .cLSYhi {
+    background-color: #000;
+  }
+
+  .bm-item-list {
+    padding-top: 80px;
+  }
+}

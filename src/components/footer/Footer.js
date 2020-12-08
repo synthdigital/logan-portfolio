@@ -122,7 +122,7 @@ const Footer = () => {
                       name="msg"
                       id="msg"
                       className="send-value"
-                      placeholder="Tell us about your product and your nearest plans on engagement."
+                      placeholder="Tell us about your business and scope of the project!"
                       required
                     />
                   </label>

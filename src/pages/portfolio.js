@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SimpleReactLightbox from "simple-react-lightbox";
 import PortfolioImageGrid from "../components/PortfolioImageGrid/PortfolioImageGrid";
 import SEO from "../components/seo/Seo";
 import Layout from "../components/layout/Layout";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import "../styles/portfolio.scss";
 
 const Portfolio = () => {
+  const [activeImgs, setActiveImgs] = useState("all");
+
+  useEffect(() => {});
+
+  const updateActiveImages = item => {
+    setActiveImgs(item);
+  };
+
   return (
     <Layout>
       <SEO title="Our Work" />
@@ -22,16 +29,25 @@ const Portfolio = () => {
           <Row>
             <Col>
               <div className="categories">
-                <AnchorLink href="#apps">App UI/UX</AnchorLink>
-                <AnchorLink href="#logos">Identity</AnchorLink>
-                <AnchorLink href="#icons">Iconography</AnchorLink>
-                <AnchorLink href="#website">Website</AnchorLink>
+                <button onClick={() => updateActiveImages("all")}>All</button>
+                <button onClick={() => updateActiveImages("apps")}>
+                  App UI/UX
+                </button>
+                <button onClick={() => updateActiveImages("logos")}>
+                  Identity
+                </button>
+                <button onClick={() => updateActiveImages("icons")}>
+                  Iconography
+                </button>
+                <button onClick={() => updateActiveImages("websites")}>
+                  Website
+                </button>
               </div>
             </Col>
           </Row>
         </Container>
         <SimpleReactLightbox>
-          <PortfolioImageGrid />
+          <PortfolioImageGrid active={activeImgs} />
         </SimpleReactLightbox>
       </div>
     </Layout>

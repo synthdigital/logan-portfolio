@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 import CookieConsent from "react-cookie-consent";
+import BurgerAnimation from "../BurgerAnimation/BurgerAnimation";
 
 import Burger from "../hamburger_menu/HamburgerMenu";
 
@@ -17,6 +18,10 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
         }
       }
     });
+
+    document
+      .querySelector(".bm-burger-button button")
+      .setAttribute("id", "burger-btn");
   });
 
   return (
@@ -86,6 +91,7 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
               alt="Synth Digital Favicon"
             />
           </Link>
+          <BurgerAnimation />
           <Burger />
         </div>
       </nav>

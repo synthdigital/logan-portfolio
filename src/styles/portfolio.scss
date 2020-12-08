@@ -11,7 +11,7 @@
       display: flex;
       justify-content: space-around;
 
-      a {
+      button {
         background: transparent;
         border: none;
         font-family: Brother-1816, sans-serif;
@@ -20,6 +20,28 @@
         line-height: 1.52;
         letter-spacing: -0.99px;
         color: #ffffff;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .hero-section {
+      .categories button {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .hero-section {
+      .categories {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        button {
+          font-size: 22px;
+          width: 33%;
+          margin-top: 25px;
+        }
       }
     }
   }
