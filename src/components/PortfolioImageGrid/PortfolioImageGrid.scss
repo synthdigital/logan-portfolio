@@ -30,7 +30,9 @@ main div.portfolio-grid.container {
     margin-right: 1%;
 
     @media screen and (max-width: 767px) {
-      width: 98%;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -40,9 +42,9 @@ main div.portfolio-grid.container {
     margin-right: 1%;
 
     @media screen and (max-width: 767px) {
-      width: 90%;
-      margin-left: 5%;
-      margin-right: 5%;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -52,7 +54,9 @@ main div.portfolio-grid.container {
     margin-right: 1%;
 
     @media screen and (max-width: 767px) {
-      width: 98%;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -68,6 +72,9 @@ main div.portfolio-grid.container {
     opacity: 1;
     animation-delay: 1s;
     animation: display-none-transition-reverse 0.5s both;
+    @media screen and (max-width: 767px) {
+      margin-top: 25px;
+    }
   }
 
   h5 {
@@ -89,6 +96,10 @@ main div.portfolio-grid.container {
     &.category-title {
       display: none;
     }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: -50px;
   }
 }
 
