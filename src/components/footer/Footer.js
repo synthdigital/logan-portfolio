@@ -2,28 +2,61 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Loader from "../loader/Loader";
 
+import CookieConsent from "react-cookie-consent";
+
 import "./footer.scss";
 
 const Footer = () => {
   return (
-    <footer className="fixed">
+    <footer className="fixed" id="contact">
       <Row>
         <Col className="spaced-out">
-          <h3 className="margin-top-15">
+          <h3 className="margin-top-15 margin-bottom-100">
             Like what you see?
             <br /> Let's talk.
           </h3>
-
-          <p className="hide-on-mobile">
-            Not a form fan? Shoot us an email.
-            <a
-              href="mailto:howdy@synthdigital.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              howdy@synthdigital.com
-            </a>
-          </p>
+          <div className="emails">
+            <p className="hide-on-mobile">
+              Strategy & Branding
+              <a
+                href="mailto:branding@synthdigital.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                branding@synthdigital.com
+              </a>
+            </p>
+            <p className="hide-on-mobile">
+              Design & Development
+              <a
+                href="mailto:dev@synthdigital.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                dev@synthdigital.com
+              </a>
+            </p>
+            <p className="hide-on-mobile">
+              Content Department
+              <a
+                href="mailto:content@synthdigital.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                content@synthdigital.com
+              </a>
+            </p>
+            <p className="hide-on-mobile">
+              Founder & Design Lead
+              <a
+                href="mailto:logan@synthdigital.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                logan@synthdigital.com
+              </a>
+            </p>
+          </div>
         </Col>
         <Col>
           <div className="form-container">
@@ -150,16 +183,48 @@ const Footer = () => {
         </Col>
         <Col className="spaced-out show-mobile">
           <div className="margin-top-50">
-            <p>
-              Not a form fan? Shoot us an email.
-              <a
-                href="mailto:howdy@synthdigital.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                howdy@synthdigital.com
-              </a>
-            </p>
+            <div className="emails">
+              <p className="hide-on-mobile">
+                Strategy & Branding
+                <a
+                  href="mailto:branding@synthdigital.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  branding@synthdigital.com
+                </a>
+              </p>
+              <p className="hide-on-mobile">
+                Design & Development
+                <a
+                  href="mailto:dev@synthdigital.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  dev@synthdigital.com
+                </a>
+              </p>
+              <p className="hide-on-mobile">
+                Content Department
+                <a
+                  href="mailto:content@synthdigital.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  content@synthdigital.com
+                </a>
+              </p>
+              <p className="hide-on-mobile">
+                Founder & Design Lead
+                <a
+                  href="mailto:logan@synthdigital.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  logan@synthdigital.com
+                </a>
+              </p>
+            </div>
           </div>
         </Col>
       </Row>
@@ -168,12 +233,40 @@ const Footer = () => {
         {/* -- DO NOT USE GATSBY'S Link HERE --*/}
         {/* Changing the a tags to privacy policy, sitemap, or footer to gatsby's Link component breaks the header transparency fix   */}
 
-        <p>
-          {" "}
+        <div>
+          <a href="/#what-we-do">About</a>
+          <a href="/#services">Services</a>
+          <a href="/#process">Process</a>
+          <a href="/#clients">Testimonies</a>
+          <a href="/portfolio">Portfolio</a>
+          {/* <a href="/blog">Blog</a> */}
           <a href="/privacy-policy">Privacy Policy</a>
-        </p>
-        <p>© 2020 - SynthDigital</p>
+        </div>
       </Row>
+      <CookieConsent
+        cookieName="myAwesomeCookieName2"
+        style={{ background: "#fff", justifyContent: "Center", zindex: "999" }}
+        buttonStyle={{
+          color: "#fff",
+          fontSize: "13px",
+          background: "#00ddc7",
+          borderRadius: "20px",
+          padding: "10px 20px",
+          zindex: "9999",
+        }}
+        contentStyle={{
+          color: "#4a4a4a",
+          textTransform: "none",
+          flex: "initial",
+          fontSize: "13px",
+          zindex: "9999",
+        }}
+        expires={150}
+        acceptOnScroll={true}
+        acceptOnScrollPercentage={10}
+      >
+        This website uses cookies to enhance the user experience.
+      </CookieConsent>
     </footer>
   );
 };

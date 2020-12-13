@@ -27,3 +27,18 @@
 .navbar-brand .bm-menu-wrap {
   pointer-events: all;
 }
+
+.bm-item-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bm-item {
+  outline: none;
+  display: flex !important;
+  flex-direction: column;
+
+  a {
+    margin-right: 5vw;
+  }
+}

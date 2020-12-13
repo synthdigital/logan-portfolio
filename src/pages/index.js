@@ -58,10 +58,10 @@ const IndexPage = () => {
             </Col>
           </Row>
         </Container>
-        <Container className="our-focus">
+        <Container className="our-focus" id="what-we-do">
           <Row>
             <Col className="centered-text">
-              <h5 className="margin-top-100">OUR FOCUS</h5>
+              <h5 className="margin-top-100">WHAT WE DO</h5>
             </Col>
           </Row>
           <Row className="margin-top-125 flexed">
@@ -89,12 +89,13 @@ const IndexPage = () => {
                 <figcaption>EquinEdge (multiplatform UI/UX)</figcaption>
               </figure>
             </Col>
+            <Waypoint
+              onEnter={() => {
+                document.querySelector(".phone-img").classList.add("animate");
+              }}
+            />
           </Row>
-          <Waypoint
-            onEnter={() => {
-              document.querySelector(".phone-img").classList.add("animate");
-            }}
-          />
+
           <Row className="margin-top-50">
             <Col className="right-align left">
               <figure className="dog-logo">
@@ -197,7 +198,7 @@ const IndexPage = () => {
             }}
           />
         </Container>
-        <Container className="core-services">
+        <Container className="core-services" id="services">
           <Row className="margin-top-60">
             <Col className="centered-text">
               <h5 className="uppercase">Core Services</h5>
@@ -246,7 +247,7 @@ const IndexPage = () => {
             </Col>
           </Row>
         </Container>
-        <Container className="our-process">
+        <Container className="our-process" id="process">
           <Row className="margin-top-60 margin-bottom-100">
             <Col>
               <h5 className="uppercase margin-bottom-50">our process</h5>
@@ -369,7 +370,7 @@ const IndexPage = () => {
             </Col>
           </Row>
         </Container>
-        <Container className="testimonies">
+        <Container className="testimonies" id="clients">
           <Row className="centered-text margin-top-50">
             <Col>
               <h5 className="margin-bottom-50">CLIENTS</h5>
@@ -380,10 +381,10 @@ const IndexPage = () => {
               <div>
                 <div className="testimoni">
                   <p>
-                    “Working with Logan was very easy. He immediately understood
-                    our business requirements, translated them into specs, and
-                    got the work done quickly. I would definitely work with him
-                    again!”
+                    “Working with SynthDigital was very easy. They immediately
+                    understood our business requirements, translated them into
+                    specs, and got the work done quickly. I would definitely
+                    work with them again!”
                   </p>
                   <cite>
                     <span className="no-break">
@@ -396,8 +397,8 @@ const IndexPage = () => {
               <div>
                 <div className="testimoni">
                   <p>
-                    “I’ve worked with multiple designers but none like Logan.
-                    His work exceeds expectations.”
+                    “I’ve worked with multiple design agencies, but none like
+                    SynthDigital. Their work exceeds expectations.”
                   </p>
                   <cite>
                     Jeffrey Scott Smith, Founder
@@ -408,11 +409,11 @@ const IndexPage = () => {
               <div>
                 <div className="testimoni">
                   <p>
-                    “Logan is a designer with a motivation to solve complex
-                    challenges. He came to the table as a thought partner rather
-                    than just a doer that blindly follows orders. He brought not
-                    just excellent multi-platform UX design, but all-around
-                    great ideas.”
+                    “SynthDigital is a designe agency with the motivation to
+                    solve complex challenges. They came to the table as a
+                    thought partner rather than just a doer that blindly follows
+                    orders. They brought not just excellent multi-platform UX
+                    design, but all-around great ideas.”
                   </p>
                   <cite>
                     Scott McKeever, Founder & CEO

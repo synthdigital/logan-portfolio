@@ -1,10 +1,8 @@
 import PropTypes from "prop-types";
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
-import CookieConsent from "react-cookie-consent";
 import BurgerAnimation from "../BurgerAnimation/BurgerAnimation";
-
 import Burger from "../hamburger_menu/HamburgerMenu";
 
 const Header = ({ siteTitle, opaque, headerVersion }) => {
@@ -23,6 +21,27 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
       .querySelector(".bm-burger-button button")
       .setAttribute("id", "burger-btn");
   });
+
+  const [isActive, setIsActive] = useState(false);
+
+  const setClass = state => {
+    if (typeof window === "undefined" || !window.document) {
+      return;
+    } else {
+      if (state && document.querySelector(".opening")) {
+        document.querySelector(".opening").classList.add("open");
+      } else if (document.querySelector(".opening")) {
+        document.querySelector(".opening").classList.remove("open");
+      }
+    }
+  };
+
+  const toggleButton = useCallback(() => {
+    document.getElementById("burger-btn").click();
+    setIsActive(prevState => !prevState);
+  }, []);
+
+  setClass(isActive);
 
   return (
     <header
@@ -44,28 +63,6 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
           gtag('js', new Date()); gtag('config', 'G-2KEWZFWKWP')`}
         </script>
       </Helmet>
-      <CookieConsent
-        cookieName="myAwesomeCookieName2"
-        style={{ background: "#fff", justifyContent: "Center" }}
-        buttonStyle={{
-          color: "#fff",
-          fontSize: "13px",
-          background: "#00ddc7",
-          borderRadius: "20px",
-          padding: "10px 20px",
-        }}
-        contentStyle={{
-          color: "#4a4a4a",
-          textTransform: "none",
-          flex: "initial",
-          fontSize: "13px",
-        }}
-        expires={150}
-        acceptOnScroll={true}
-        acceptOnScrollPercentage={10}
-      >
-        This website uses cookies to enhance the user experience.
-      </CookieConsent>
       <link rel="stylesheet" href="https://use.typekit.net/wzs4klt.css" />
       <link
         rel="stylesheet"
@@ -91,8 +88,8 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
               alt="Synth Digital Favicon"
             />
           </Link>
-          <BurgerAnimation />
-          <Burger />
+          <BurgerAnimation isActive={isActive} toggleButton={toggleButton} />
+          <Burger isActive={isActive} toggleButton={toggleButton} />
         </div>
       </nav>
     </header>

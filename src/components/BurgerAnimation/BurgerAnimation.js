@@ -2,31 +2,7 @@ import React, { useState, useCallback } from "react";
 import { HamburgerSlider } from "react-animated-burgers";
 import "./BurgerAnimation.scss";
 
-const App = () => {
-  const [isActive, setIsActive] = useState(false);
-
-  const setClass = state => {
-    if (typeof window === "undefined" || !window.document) {
-      return;
-    } else {
-      if (state && document.querySelector(".opening")) {
-        console.log("hi");
-        document.querySelector(".opening").classList.add("open");
-      } else if (document.querySelector(".opening")) {
-        console.log("bye");
-        document.querySelector(".opening").classList.remove("open");
-      }
-    }
-  };
-
-  const toggleButton = useCallback(() => {
-    document.getElementById("burger-btn").click();
-    setIsActive(prevState => !prevState);
-  }, []);
-
-  console.log(isActive);
-  setClass(isActive);
-
+const BurgerAnimation = ({ isActive, toggleButton }) => {
   return (
     <HamburgerSlider
       className="opening"
@@ -37,4 +13,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default BurgerAnimation;

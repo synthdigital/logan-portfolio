@@ -199,7 +199,6 @@ const PortfolioImageGrid = ({ active }) => {
               alt="Hospital Integration Compliance"
               className="app"
             />
-
             <img
               src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.21.32 PM.png")}
               alt="App View"
@@ -222,7 +221,6 @@ const PortfolioImageGrid = ({ active }) => {
               alt="Parts View"
               className="app"
             />
-
             <img
               src={require("../../images/portfolio-images/Braveheart1.png")}
               alt="Braveheart Company Description"
@@ -239,11 +237,100 @@ const PortfolioImageGrid = ({ active }) => {
               className="app"
             />
           </lazyload>
-          {/* <img
-            src={require("../../images/portfolio-images/Braveheart4.png")}
-            alt="Braveheart Share Price"
-            className="app"
-          /> */}
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 9.45.09 PM.png")}
+              alt="Callahan Roach Pricing"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.11.16 PM.png")}
+              alt="CallahanRoach1"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.20.22 PM.png")}
+              alt="CallahanRoach"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/Braveheart4.png")}
+              alt="Braveheart Share Price"
+              className="app"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.20.37 PM.png")}
+              alt="Admin Portal"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-23 at 3.18.36 PM.png")}
+              alt="Equinedge Stats View"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-24 at 4.08.38 PM.png")}
+              alt="Equinedge Dashboard"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.21.23 PM.png")}
+              alt="Hospital Integration Help View"
+              className="app"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.21.40 PM.png")}
+              alt="Hospital Integration Patient Info"
+              className="app"
+            />
+
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.39.28 PM.png")}
+              alt="Hospital Integration Satisfaction"
+              className="app"
+            />
+
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.47.29 PM.png")}
+              alt="Hospital Integration Patients"
+              className="app"
+            />
+
+            <img
+              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-11-30 at 5.48.34 PM.png")}
+              alt="QUO Home"
+              className="app"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-11-30 at 5.49.14 PM.png")}
+              alt="QUO Data View"
+              className="app half-app"
+            />
+            <img
+              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-12-01 at 12.07.46 AM.png")}
+              alt="QUO Dashboard"
+              className="app half-app"
+            />
+          </lazyload>
+
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.26.53 PM.png")}
+              alt="UM Price Quote"
+              className="app half-app"
+            />
+            <img
+              src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.37.01 PM.png")}
+              alt="UM Search History"
+              className="app half-app"
+            />
+          </lazyload>
         </div>
         <h5 className="margin-top-50" id="logos" className="category-title">
           Identity
@@ -369,125 +456,31 @@ const PortfolioImageGrid = ({ active }) => {
               alt="Buzzlogix Home Page"
               className="website"
             />
-
-            <img
-              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 9.45.09 PM.png")}
-              alt="Callahan Roach Pricing"
-              className="website"
-            />
-
-            <img
-              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.11.16 PM.png")}
-              alt="CallahanRoach1"
-              className="website"
-            />
-          </lazyload>
-          <lazyload offset={100}>
-            <img
-              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.20.22 PM.png")}
-              alt="CallahanRoach"
-              className="website"
-            />
-
-            <img
-              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.20.37 PM.png")}
-              alt="Admin Portal"
-              className="website"
-            />
             <img
               src={require("../../images/portfolio-images/DBTofTexas.png")}
               alt="DBT of Texas Home"
               className="website"
             />
-          </lazyload>
-          <lazyload offset={100}>
             <img
               src={require("../../images/portfolio-images/DDSynergy.png")}
               alt="D&D Synergy"
               className="website"
             />
-
+          </lazyload>
+          <lazyload offset={100}>
             <img
               src={require("../../images/portfolio-images/EquinEdge_1.png")}
               alt="Equinedge Home"
               className="website"
             />
             <img
-              src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-23 at 3.18.36 PM.png")}
-              alt="Equinedge Stats View"
-              className="website"
-            />
-          </lazyload>
-          <lazyload offset={100}>
-            <img
-              src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-24 at 4.08.38 PM.png")}
-              alt="Equinedge Dashboard"
-              className="website"
-            />
-
-            <img
-              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.21.23 PM.png")}
-              alt="Hospital Integration Help View"
-              className="website"
-            />
-            <img
-              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.21.40 PM.png")}
-              alt="Hospital Integration Patient Info"
-              className="website"
-            />
-          </lazyload>
-          <lazyload offset={100}>
-            <img
-              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.39.28 PM.png")}
-              alt="Hospital Integration Satisfaction"
-              className="website"
-            />
-
-            <img
-              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.47.29 PM.png")}
-              alt="Hospital Integration Patients"
-              className="website"
-            />
-
-            <img
               src={require("../../images/portfolio-images/NQuotient.png")}
               alt="NQuotient Home"
               className="website"
             />
-          </lazyload>
-          <lazyload offset={100}>
             <img
               src={require("../../images/portfolio-images/PatientVoice_1.png")}
               alt="Hospital Integrations Inc Home"
-              className="website"
-            />
-
-            <img
-              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-11-30 at 5.48.34 PM.png")}
-              alt="QUO Home"
-              className="website"
-            />
-
-            <img
-              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-11-30 at 5.49.14 PM.png")}
-              alt="QUO Data View"
-              className="website"
-            />
-          </lazyload>
-          <lazyload offset={100}>
-            <img
-              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-12-01 at 12.07.46 AM.png")}
-              alt="QUO Dashboard"
-              className="website"
-            />
-            <img
-              src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.26.53 PM.png")}
-              alt="UM Price Quote"
-              className="website"
-            />
-            <img
-              src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.37.01 PM.png")}
-              alt="UM Search History"
               className="website"
             />
           </lazyload>
