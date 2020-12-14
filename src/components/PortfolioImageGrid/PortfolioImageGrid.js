@@ -310,27 +310,26 @@ const PortfolioImageGrid = ({ active }) => {
             <img
               src={require("../../images/portfolio-images/Quo-Screen Shot 2020-11-30 at 5.49.14 PM.png")}
               alt="QUO Data View"
-              className="app half-app"
+              className="app"
             />
             <img
               src={require("../../images/portfolio-images/Quo-Screen Shot 2020-12-01 at 12.07.46 AM.png")}
               alt="QUO Dashboard"
-              className="app half-app"
+              className="app"
             />
-          </lazyload>
-
-          <lazyload offset={100}>
             <img
               src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.26.53 PM.png")}
               alt="UM Price Quote"
-              className="app half-app"
+              className="app "
             />
             <img
               src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.37.01 PM.png")}
               alt="UM Search History"
-              className="app half-app"
+              className="app"
             />
           </lazyload>
+
+          <lazyload offset={100}></lazyload>
         </div>
         <h5 className="margin-top-50" id="logos" className="category-title">
           Identity

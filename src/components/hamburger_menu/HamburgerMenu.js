@@ -87,7 +87,7 @@ export default class Burger extends React.Component {
             Testimonies
           </Link>
           <Link className="menu-item" to="/portfolio">
-            Portfolio
+            Work
           </Link>
         </div>
         {/* <Link id="portfolio" className="menu-item" to="/Blog">

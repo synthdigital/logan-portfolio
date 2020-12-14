@@ -144,6 +144,10 @@ footer button.pink-button {
 
 footer .form-container {
   margin-top: 60px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 0px;
+  }
 }
 
 footer .socket.row div {
@@ -156,6 +160,15 @@ footer .socket.row div {
 
   a {
     font-size: 23px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 15px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    margin-top: -75px;
   }
 }
 
