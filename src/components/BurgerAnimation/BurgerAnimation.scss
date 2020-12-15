@@ -32,16 +32,13 @@ header {
       background-color: #000;
     }
   }
-  .navbar-brand .open {
-    transition-delay: 0.1s;
-    right: -5%;
-
-    @media screen and (max-width: 1224px) {
-      right: -1%;
-    }
-  }
 
   .bm-item-list {
     padding-top: 80px;
   }
+}
+
+.logo.first-logo.open {
+  z-index: 999999;
+  opacity: 1;
 }

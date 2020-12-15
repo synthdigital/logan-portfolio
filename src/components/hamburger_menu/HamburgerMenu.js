@@ -33,17 +33,6 @@ export default class Burger extends React.Component {
       >
         <div>
           <Link
-            id="home"
-            className="menu-item"
-            to="/"
-            onClick={() => {
-              this.closeMenu();
-              this.props.toggleButton();
-            }}
-          >
-            Home
-          </Link>
-          <Link
             id="about"
             className="menu-item"
             to="/#what-we-do"
@@ -64,8 +53,6 @@ export default class Burger extends React.Component {
           >
             Services
           </Link>
-        </div>
-        <div>
           <Link
             className="menu-item"
             to="/#process"
@@ -76,24 +63,11 @@ export default class Burger extends React.Component {
           >
             Process
           </Link>
-          <Link
-            className="menu-item"
-            to="/#clients"
-            onClick={() => {
-              this.closeMenu();
-              this.props.toggleButton();
-            }}
-          >
-            Testimonies
-          </Link>
+        </div>
+        <div className="right-items">
           <Link className="menu-item" to="/portfolio">
             Work
           </Link>
-        </div>
-        {/* <Link id="portfolio" className="menu-item" to="/Blog">
-          Blog
-        </Link> */}
-        <div>
           <Link
             className="menu-item"
             to="/#contact"
@@ -105,6 +79,10 @@ export default class Burger extends React.Component {
             Contact
           </Link>
         </div>
+        {/* <Link id="portfolio" className="menu-item" to="/Blog">
+          Blog
+        </Link> */}
+        <div></div>
       </Menu>
     );
   }

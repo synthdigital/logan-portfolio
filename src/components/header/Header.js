@@ -30,8 +30,10 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
     } else {
       if (state && document.querySelector(".opening")) {
         document.querySelector(".opening").classList.add("open");
+        document.querySelector(".first-logo").classList.add("open");
       } else if (document.querySelector(".opening")) {
         document.querySelector(".opening").classList.remove("open");
+        document.querySelector(".first-logo").classList.remove("open");
       }
     }
   };

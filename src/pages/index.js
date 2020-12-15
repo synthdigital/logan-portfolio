@@ -381,7 +381,7 @@ const IndexPage = () => {
               <div>
                 <div className="testimoni">
                   <p>
-                    “Working with SynthDigital was very easy. They immediately
+                    “Working with Synth was very easy. They immediately
                     understood our business requirements, translated them into
                     specs, and got the work done quickly. I would definitely
                     work with them again!”
@@ -398,7 +398,7 @@ const IndexPage = () => {
                 <div className="testimoni">
                   <p>
                     “I’ve worked with multiple design agencies, but none like
-                    SynthDigital. Their work exceeds expectations.”
+                    Synth. Their work exceeds expectations.”
                   </p>
                   <cite>
                     Jeffrey Scott Smith, Founder
@@ -409,11 +409,11 @@ const IndexPage = () => {
               <div>
                 <div className="testimoni">
                   <p>
-                    “SynthDigital is a designe agency with the motivation to
-                    solve complex challenges. They came to the table as a
-                    thought partner rather than just a doer that blindly follows
-                    orders. They brought not just excellent multi-platform UX
-                    design, but all-around great ideas.”
+                    “Logan at Synth is a designer with a motivation to solve
+                    complex challenges. He came to the table as a thought
+                    partner rather than just a doer that blindly follows orders.
+                    He brought not just excellent multi-platform UX design, but
+                    all-around great ideas.”
                   </p>
                   <cite>
                     Scott McKeever, Founder & CEO
@@ -426,14 +426,14 @@ const IndexPage = () => {
         </Container>
         <Container className="logos-section">
           <Row className="align-vertical">
-            <Col>
+            <div>
               <img
                 src={require("../svgs/varo-bank-logo-1.svg")}
                 alt="Varo Logo"
                 className="logo one height-34-mobile"
               />
-            </Col>
-            <Col>
+            </div>
+            <div>
               <img
                 src={require("../svgs/group-17.svg")}
                 alt="Equinedge Logo"
@@ -444,8 +444,8 @@ const IndexPage = () => {
                 alt="UM Logo"
                 className="logo five show-mobile height-34-mobile"
               />
-            </Col>
-            <Col>
+            </div>
+            <div>
               <img
                 src={require("../svgs/group-5.svg")}
                 alt="CR Logo"
@@ -456,8 +456,8 @@ const IndexPage = () => {
                 alt="Hospital Integration Logo"
                 className="logo four show-mobile"
               />
-            </Col>
-            <Col>
+            </div>
+            <div>
               <img
                 src={require("../svgs/group.svg")}
                 alt="Hospital Integration Logo"
@@ -468,8 +468,8 @@ const IndexPage = () => {
                 alt="CR Logo"
                 className="logo three height-63-mobile show-mobile"
               />
-            </Col>
-            <Col>
+            </div>
+            <div>
               <img
                 src={require("../svgs/group-225.svg")}
                 alt="UM Logo"
@@ -480,22 +480,20 @@ const IndexPage = () => {
                 alt="Equinedge Logo"
                 className="logo two show-mobile height-60"
               />
-            </Col>
-            <Col>
+            </div>
+            <div>
               <img
                 src={require("../svgs/group-7.svg")}
                 alt="TU Logo"
                 className="logo six"
               />
-            </Col>
-            <Waypoint
-              onEnter={() => {
-                document
-                  .querySelector(".logos-section")
-                  .classList.add("animate");
-              }}
-            />
+            </div>
           </Row>
+          <Waypoint
+            onEnter={() => {
+              document.querySelector(".logos-section").classList.add("animate");
+            }}
+          />
         </Container>
       </div>
     </Layout>
