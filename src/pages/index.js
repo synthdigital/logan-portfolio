@@ -43,7 +43,8 @@ const IndexPage = () => {
             <Col className="content-container column centered-text">
               <h1 className="teal-text">Howdy.</h1>
               <p className="white-text subtext">
-                We’re a UI/UX strategy and design agency in Dallas, Tx. <br />{" "}
+                Synth is a UI/UX strategy and design agency in Dallas, Tx.{" "}
+                <br />
                 We create kickass digital products across all platforms.
               </p>
             </Col>
