@@ -782,6 +782,14 @@ header {
     margin: auto !important;
     position: absolute;
   }
+
+  @media screen and (max-width: 767px) {
+    .navbar-item {
+      padding-left: 0 !important;
+      padding-top: 16px;
+      max-width: 160px;
+    }
+  }
 }
 
 .navbar-start a {
