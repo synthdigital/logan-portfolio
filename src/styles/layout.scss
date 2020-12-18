@@ -745,9 +745,11 @@ header {
   position: relative;
   transition-duration: 0.5s;
   pointer-events: none;
+
   .navbar-brand {
     pointer-events: all;
   }
+
   .navbar-end a.button {
     color: #0092fb;
     text-decoration: none;
@@ -761,6 +763,7 @@ header {
       color: #0092fb;
     }
   }
+
   &.end-transparency {
     .mainHeader .navbar-start .navbar-item {
       color: #466777;
@@ -781,6 +784,10 @@ header {
     right: 0;
     margin: auto !important;
     position: absolute;
+
+    @media screen and (max-width: 767px) {
+      padding-bottom: 10px;
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -969,10 +976,10 @@ header .bm-menu-wrap {
   border-right: 0;
   text-transform: none;
 
-  @media screen and (max-width: 1224px) {
-    font-size: 32px;
-    margin-right: 2.5vw;
-  }
+  // @media screen and (max-width: 1224px) {
+  //   font-size: 32px;
+  //   margin-right: 2.5vw;
+  // }
 
   @media screen and (max-width: 767px) {
     font-size: 24px;
