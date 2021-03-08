@@ -101,49 +101,79 @@ const PortfolioImageGrid = ({ active }) => {
   return (
     <Container className="portfolio-grid">
       <SRLWrapper options={options}>
-      <h5 className="margin-top-50" id="website" className="category-title">
-          Websites
-        </h5>
-        <div className="website-container img-container">
-          <lazyload offset={100}>
-            <img
-              src={require("../../images/portfolio-images/Buzzlogix.png")}
-              alt="Buzzlogix Home Page"
-              className="website"
-            />
-            <img
-              src={require("../../images/portfolio-images/DBTofTexas.png")}
-              alt="DBT of Texas Home"
-              className="website"
-            />
-            <img
-              src={require("../../images/portfolio-images/DDSynergy.png")}
-              alt="D&D Synergy"
-              className="website"
-            />
-          </lazyload>
-          <lazyload offset={100}>
-            <img
-              src={require("../../images/portfolio-images/EquinEdge_1.png")}
-              alt="Equinedge Home"
-              className="website"
-            />
-            <img
-              src={require("../../images/portfolio-images/NQuotient.png")}
-              alt="NQuotient Home"
-              className="website"
-            />
-            <img
-              src={require("../../images/portfolio-images/PatientVoice_1.png")}
-              alt="Hospital Integrations Inc Home"
-              className="website"
-            />
-          </lazyload>
-        </div>
         <h5 id="apps" className="category-title">
           Apps UI/UX
         </h5>
         <div className="apps-container img-container">
+        <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.20.37 PM.png")}
+              alt="Admin Portal"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-23 at 3.18.36 PM.png")}
+              alt="Equinedge Stats View"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-24 at 4.08.38 PM.png")}
+              alt="Equinedge Dashboard"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.21.23 PM.png")}
+              alt="Hospital Integration Help View"
+              className="app"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.21.40 PM.png")}
+              alt="Hospital Integration Patient Info"
+              className="app"
+            />
+
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.39.28 PM.png")}
+              alt="Hospital Integration Satisfaction"
+              className="app"
+            />
+
+            <img
+              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.47.29 PM.png")}
+              alt="Hospital Integration Patients"
+              className="app"
+            />
+
+            <img
+              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-11-30 at 5.48.34 PM.png")}
+              alt="QUO Home"
+              className="app"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-11-30 at 5.49.14 PM.png")}
+              alt="QUO Data View"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-12-01 at 12.07.46 AM.png")}
+              alt="QUO Dashboard"
+              className="app"
+            />
+            <img
+              src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.26.53 PM.png")}
+              alt="UM Price Quote"
+              className="app "
+            />
+            <img
+              src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.37.01 PM.png")}
+              alt="UM Search History"
+              className="app"
+            />
+          </lazyload>
           <lazyload offset={100}>
             <img
               src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-24 at 4.37.13 PM.png")}
@@ -298,75 +328,6 @@ const PortfolioImageGrid = ({ active }) => {
               className="app"
             />
           </lazyload>
-          <lazyload offset={100}>
-            <img
-              src={require("../../images/portfolio-images/CallahanRoach-Screen Shot 2020-11-30 at 10.20.37 PM.png")}
-              alt="Admin Portal"
-              className="app"
-            />
-            <img
-              src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-23 at 3.18.36 PM.png")}
-              alt="Equinedge Stats View"
-              className="app"
-            />
-            <img
-              src={require("../../images/portfolio-images/EquinEdge-Screen Shot 2020-11-24 at 4.08.38 PM.png")}
-              alt="Equinedge Dashboard"
-              className="app"
-            />
-            <img
-              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.21.23 PM.png")}
-              alt="Hospital Integration Help View"
-              className="app"
-            />
-          </lazyload>
-          <lazyload offset={100}>
-            <img
-              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.21.40 PM.png")}
-              alt="Hospital Integration Patient Info"
-              className="app"
-            />
-
-            <img
-              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.39.28 PM.png")}
-              alt="Hospital Integration Satisfaction"
-              className="app"
-            />
-
-            <img
-              src={require("../../images/portfolio-images/HospitalIntegration-Screen Shot 2020-11-30 at 5.47.29 PM.png")}
-              alt="Hospital Integration Patients"
-              className="app"
-            />
-
-            <img
-              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-11-30 at 5.48.34 PM.png")}
-              alt="QUO Home"
-              className="app"
-            />
-          </lazyload>
-          <lazyload offset={100}>
-            <img
-              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-11-30 at 5.49.14 PM.png")}
-              alt="QUO Data View"
-              className="app"
-            />
-            <img
-              src={require("../../images/portfolio-images/Quo-Screen Shot 2020-12-01 at 12.07.46 AM.png")}
-              alt="QUO Dashboard"
-              className="app"
-            />
-            <img
-              src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.26.53 PM.png")}
-              alt="UM Price Quote"
-              className="app "
-            />
-            <img
-              src={require("../../images/portfolio-images/UniversalMetals-Screen Shot 2020-11-24 at 5.37.01 PM.png")}
-              alt="UM Search History"
-              className="app"
-            />
-          </lazyload>
 
           <lazyload offset={100}></lazyload>
         </div>
@@ -481,6 +442,45 @@ const PortfolioImageGrid = ({ active }) => {
               src={require("../../images/portfolio-images/MiscIcons2.png")}
               alt="Misc Icons"
               className="icons"
+            />
+          </lazyload>
+        </div>
+        <h5 className="margin-top-50" id="website" className="category-title">
+          Websites
+        </h5>
+        <div className="website-container img-container">
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/Buzzlogix.png")}
+              alt="Buzzlogix Home Page"
+              className="website"
+            />
+            <img
+              src={require("../../images/portfolio-images/DBTofTexas.png")}
+              alt="DBT of Texas Home"
+              className="website"
+            />
+            <img
+              src={require("../../images/portfolio-images/DDSynergy.png")}
+              alt="D&D Synergy"
+              className="website"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/EquinEdge_1.png")}
+              alt="Equinedge Home"
+              className="website"
+            />
+            <img
+              src={require("../../images/portfolio-images/NQuotient.png")}
+              alt="NQuotient Home"
+              className="website"
+            />
+            <img
+              src={require("../../images/portfolio-images/PatientVoice_1.png")}
+              alt="Hospital Integrations Inc Home"
+              className="website"
             />
           </lazyload>
         </div>
