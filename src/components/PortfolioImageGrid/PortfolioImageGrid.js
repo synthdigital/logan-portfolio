@@ -101,6 +101,45 @@ const PortfolioImageGrid = ({ active }) => {
   return (
     <Container className="portfolio-grid">
       <SRLWrapper options={options}>
+      <h5 className="margin-top-50" id="website" className="category-title">
+          Websites
+        </h5>
+        <div className="website-container img-container">
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/Buzzlogix.png")}
+              alt="Buzzlogix Home Page"
+              className="website"
+            />
+            <img
+              src={require("../../images/portfolio-images/DBTofTexas.png")}
+              alt="DBT of Texas Home"
+              className="website"
+            />
+            <img
+              src={require("../../images/portfolio-images/DDSynergy.png")}
+              alt="D&D Synergy"
+              className="website"
+            />
+          </lazyload>
+          <lazyload offset={100}>
+            <img
+              src={require("../../images/portfolio-images/EquinEdge_1.png")}
+              alt="Equinedge Home"
+              className="website"
+            />
+            <img
+              src={require("../../images/portfolio-images/NQuotient.png")}
+              alt="NQuotient Home"
+              className="website"
+            />
+            <img
+              src={require("../../images/portfolio-images/PatientVoice_1.png")}
+              alt="Hospital Integrations Inc Home"
+              className="website"
+            />
+          </lazyload>
+        </div>
         <h5 id="apps" className="category-title">
           Apps UI/UX
         </h5>
@@ -442,45 +481,6 @@ const PortfolioImageGrid = ({ active }) => {
               src={require("../../images/portfolio-images/MiscIcons2.png")}
               alt="Misc Icons"
               className="icons"
-            />
-          </lazyload>
-        </div>
-        <h5 className="margin-top-50" id="website" className="category-title">
-          Websites
-        </h5>
-        <div className="website-container img-container">
-          <lazyload offset={100}>
-            <img
-              src={require("../../images/portfolio-images/Buzzlogix.png")}
-              alt="Buzzlogix Home Page"
-              className="website"
-            />
-            <img
-              src={require("../../images/portfolio-images/DBTofTexas.png")}
-              alt="DBT of Texas Home"
-              className="website"
-            />
-            <img
-              src={require("../../images/portfolio-images/DDSynergy.png")}
-              alt="D&D Synergy"
-              className="website"
-            />
-          </lazyload>
-          <lazyload offset={100}>
-            <img
-              src={require("../../images/portfolio-images/EquinEdge_1.png")}
-              alt="Equinedge Home"
-              className="website"
-            />
-            <img
-              src={require("../../images/portfolio-images/NQuotient.png")}
-              alt="NQuotient Home"
-              className="website"
-            />
-            <img
-              src={require("../../images/portfolio-images/PatientVoice_1.png")}
-              alt="Hospital Integrations Inc Home"
-              className="website"
             />
           </lazyload>
         </div>
