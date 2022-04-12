@@ -211,7 +211,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  content@synthdigital.com
+                  content@synthdigital.com 
                 </a>
               </p>
               <p className="hide-on-mobile">
